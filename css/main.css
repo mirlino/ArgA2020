@@ -1,0 +1,1271 @@
+/*LETRAS*/
+@font-face {
+    font-family: "Purista_Bold";
+    src: url("../font/Purista\ Bold.otf");
+}
+@font-face {
+    font-family: "Purista_light";
+    src: url("../font/Purista\ Light.otf");
+}
+@font-face {
+    font-family: "Purista";
+    src: url("../font/Purista\ Medium.otf");
+}
+
+body {
+    background-color: #181818;
+}
+
+/*------------FONDOS DE SECCIONES--------------*/
+.colorFondo-Dos {
+    background-image: url('../img/fondoDos.png');
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+    display: table;
+}
+
+.colorFondo-Tres {
+    background-image: url('../img/fondoTres.png');
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+    display: table;
+}
+
+.colorFondo-Cuatro {
+    background-color: #1A1A1A;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+    display: table;
+}
+
+.colorFondo-Cinco {
+    background-color: #317ee2;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+    display: table;
+}
+
+.colorFondo-Seis {
+    background-color: #3d3c3c;
+    background-size: cover;
+    height: 45vh;
+    width: 100vw;
+    display: table;
+}
+
+.copyright {
+    background-color: #00304A;
+    background-size: cover;
+    height: 5vh;
+    width: 100vw;
+    display: table;
+}
+/*---------------FIN FONDOS------------------------*/
+
+
+/*---------------MENU ENCABEZADO-------------------*/
+.my-menu {
+    width: 100%;
+    background-color: rgba(0,0,0,.1);
+    position: fixed;
+    top: 0;
+    z-index: 9999;
+    transition: all .5s ease-out;
+}
+
+.my-menu:hover {
+    background-color: rgba(15, 116, 184, 0.7);
+    transition: all .5s ease-in;
+}
+
+/*CUANDO SE BAJA CON EL SCROLL*/
+.my-menu-scroll {
+    width: 100%;
+    background-color: rgba(0,0,0,.1);
+    position: fixed;
+    top: 0;
+    z-index: 9999;
+    transition: all .5s ease-out;
+}
+
+.my-menu-scroll:hover {
+    width: 100%;
+    background-color: rgba(15, 116, 184, 0.7);
+    position: fixed;
+    top: 0;
+    z-index: 9999;
+    transition: all .5s ease-in;
+}
+
+
+/*-------------*****------------------*/
+
+
+.my-menu ul li,
+.my-menu-scroll ul li{
+    font-family: 'Purista_bold', sans-serif;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    
+}
+
+.my-menu ul li:hover,
+.my-menu-scroll ul li:hover{
+    background-color: #fff;
+    
+}
+
+.my-menu ul li a,
+.my-menu-scroll ul li a{
+    color: #fff;
+    transition: all .3s ease;
+}
+
+.my-menu ul li a:hover,
+.my-menu-scroll ul li a:hover{
+    color: #FBAF0F;
+    transition: all .3s ease;
+}
+
+.active {
+    background-color: #fff;
+    
+}
+
+.my-menu ul li a.active {
+    color: #317ee2;
+    
+}
+
+.my-menu-scroll ul li a.active{
+    color: #FBAF0F;
+}
+
+.my-menu-scroll ul li a.active{
+    background-color: rgba(255, 255, 255, 0);;
+}
+
+
+header nav ul li:hover .children {
+    display:block;
+}
+
+header nav ul li .children {
+    
+    display: none;
+	background-color: rgba(15, 116, 184, .3);
+	position: absolute;
+	width: 40%;
+    z-index:1000;
+    transition: all .5s ease-out;
+}
+
+header nav ul li .children:hover {
+    background-color: rgba(15, 116, 184, .6);
+    transition: all .5s ease-in;
+}
+
+header nav ul li .children li {
+	display:block;
+	overflow: hidden;
+	border-bottom: 1px solid rgba(255,255,255,.1);
+}
+ 
+header nav ul li .children li a {
+	display: block;
+}
+
+
+/*CUSTOM ICON MENU TOGGLE*/
+.custom-toggler.navbar-toggler {
+    border-color: rgb(255, 254, 255) !important;
+  }
+
+.custom-toggler .navbar-toggler-icon {
+background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 254, 255, 0.7)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+/*END ICON*/
+
+/*---------------FIN MENU ENCABEZADO--------------------*/
+
+
+.columna {
+    background-color: #ffffff;
+    position: relative;
+    overflow: visible;
+    z-index: 4;
+    box-shadow: 2px 5px 8px #000;
+}
+
+.caja1{
+    top: -130px;
+    padding: 30px;
+    padding-top: 10px;
+    margin: 10px 15px;
+    z-index: 4;
+}
+.cotejo{
+    margin-bottom: -80px;
+}
+
+.cotejo a{
+    text-decoration: none;
+}
+
+.separador {
+    margin-left: 35px;
+}
+
+.nosotros {
+    color: #ffffff;
+}
+
+.nosotros img {
+    height: 218px;
+    width: 220px;
+}
+
+.nosotros h2 {
+    font-family: 'Purista_Bold', sans-serif, cursive;
+    font-size: 5.2rem;
+}
+.nosotros h3 {
+    font-family: 'Purista', sans-serif, cursive;
+    font-size: 3.1rem;
+}
+
+.nosotros p,span {
+    font-family: 'Purista_light', sans-serif, cursive;
+    font-size: 1.9rem;
+}
+
+.nosotros-prim p{
+    font-family: 'Purista_light', sans-serif, cursive;
+    font-size: 1.9rem;
+    color: #ffffff;
+}
+
+.nosotros-font-text h3{
+    font-family: 'Purista_Bold', sans-serif, cursive;
+}
+
+.nosotros-font-text p{
+    font-family: 'Purista', sans-serif, cursive;
+}
+
+.nosotros-font-text a{
+    font-family: 'Purista_light', sans-serif, cursive;
+}
+
+.texto-btn {
+    font-family: 'Purista_light', sans-serif, cursive;
+    color: #ffffff !important;
+    border: 2px solid #317ee2 !important;
+    border-radius: 1px !important;
+    
+}
+
+.admin span{
+    font-family: 'Purista_Bold', sans-serif;
+    font-size: 16px !important;
+}
+
+.admin h3 {
+    font-size: 18px;
+}
+
+
+/* COLUMNA CUATRO*/
+
+/*titulo y sub-titulo*/
+.t-events h2{
+    font-family: 'Purista_Bold', sans-serif, cursive;
+    font-size: 3.5em;
+    color: #ffffff;
+}
+
+.t-events p{
+    font-family: 'Purista', sans-serif, cursive;
+    font-size: 1.6rem;
+    color: #ffffff;
+}
+
+/*cards eventos*/
+.textos-event-card {
+    font-family: 'Purista_light', sans-serif, cursive;
+}
+
+.textos-event-card h3 {
+    font-family: 'Purista_Bold', sans-serif, cursive;
+}
+
+.textos-event-card p {
+    font-family: 'Purista', sans-serif, cursive;
+}
+
+
+/*CONTENIDO DEL FOOTER*/
+.footer-font-text h3{
+    font-family: 'Purista_Bold', sans-serif, cursive;
+    color: #FBAF0F;
+}
+
+.footer-font-text h4{
+    font-family: 'Purista_Bold', sans-serif, cursive;
+    font-size: 16px;
+    color: #fff;
+}
+
+.footer-font-text p{
+    font-family: 'Purista', sans-serif, cursive;
+    color: #fff;
+}
+
+.footer-redes-fb img{
+    height: 22px;
+    width: 15px;
+}
+
+.footer-redes-tw img{
+    height: 18px;
+    width: 22px;
+}
+.footer-redes-yo img{
+    height: 15px;
+    width: 22px;
+}
+
+.footer-font-text-btn a{
+    font-family: 'Purista_light', sans-serif, cursive;
+    font-size: 16px;
+    color: #fff;
+    border: 2px solid #FBAF0F !important;
+    border-radius: 1px !important;
+    padding: 5px 30px;
+}
+
+.footer-font-text span{
+    font-family: 'Purista_light', sans-serif, cursive;
+    font-size: 14px;
+    color: #ccc;
+
+}
+
+.footer-separador {
+    margin-left: 20px;
+    
+}
+
+/*-------------------BOTON UP-----------------------*/
+.toTop {
+    font-family: 'Purista_Bold', sans-serif, cursive;
+    font-size: 18px;
+    color: #fff;
+    text-decoration: none;
+    padding: 20px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    background-color: #FBAF0F;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    opacity: 0.5;
+    filter: alpha(opacity=50); /* For IE8 and earlier */
+    transition: all .3s ease;
+    z-index: 40;
+    
+}
+
+.toTop:hover {
+    color: #FBAF0F;
+    background-color: #0091DE;
+    margin-bottom: 15px;
+    opacity: 1.0;
+    filter: alpha(opacity=100); /* For IE8 and earlier */
+    transition: all .3s ease;
+    
+}
+
+.toTopY {
+    opacity: 0;
+    filter: alpha(opacity=0); /* For IE8 and earlier */
+    transition: all .3s ease;
+}
+
+.tophead a{
+    text-decoration: none;
+}
+/*<----------END BOTON UP--------------->*/
+
+
+/*----------------- NOSOTROS -----------------------*/
+
+.Fondo-portadaNosotros{
+      /* Set a specific height */
+    /* Create the parallax scrolling effect */
+    background-image: url('../img/nosotros.png');
+    height: 70vh;
+    width: 100vw;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+.color-portadaNosotros {
+    background-color: #fff;
+}
+
+.padin-seccion {
+    padding-top: 200px;
+    padding-bottom: 200px;
+}
+
+.nosotros-titulo{
+    padding-top: 280px;
+}
+
+.nosotros-titulo h2 {
+    font-family: 'Purista_Bold', sans-serif;
+    font-size: 80px;
+    color: #FFF;
+}
+
+.nosotros-titulo span {
+    font-family: 'Purista_Bold', sans-serif;
+    font-size: 80px;
+    color: #0091DE;
+}
+
+.nosotros-text-inicio {
+    margin-top: 100px;
+}
+
+.nosotros-text-inicio p {
+    font-family: 'Purista', sans-serif;
+    font-size: 20px;
+    color: #000;
+}
+
+
+.nosotros-text p {
+    font-family: 'Purista', sans-serif;
+    font-size: 20px;
+    color: #000;
+}
+
+.nosotros-text-dos {
+    margin-top: 10px;
+    
+}
+
+.nosotros-text-dos p {
+    font-family: 'Purista', sans-serif;
+    font-size: 20px;
+    color: #000;
+}
+
+.nosotros-historia {
+    padding-bottom: 100px;
+}
+
+.nosotros-historia h3 {
+    font-family: 'Purista_Bold', sans-serif;
+    font-size: 70px;
+    margin-top: -20px;
+}
+
+.nosotros-historia h4 {
+    font-family: 'Purista', sans-serif;
+    font-size: 20px;
+}
+/*<--------------------END NOSOTROS------------------------------>*/
+
+
+/*--------------------MIEMBROS------------------------------*/
+.Fondo-portadaMiembros{
+    /* Set a specific height */
+  /* Create the parallax scrolling effect */
+  background-image: url('../img/reclutamiento.png');
+  height: 50vh;
+  width: 100vw;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+}
+
+.miembros-titulo{
+    padding-top: 230px;
+}
+
+.miembros-text h2 {
+    font-family: 'Purista_Bold', sans-serif;
+    font-size: 50px;
+    text-transform: uppercase;
+
+}
+
+.miembros-text .btn {
+    text-decoration: none;
+    color: #079907;
+    font-family: 'Purista_Bold', sans-serif;
+    font-size: 20px;
+    text-transform: uppercase;
+
+}
+
+.miembros-text .btn:hover {
+    text-decoration: none;
+    color: #FBAF0F;
+    font-family: 'Purista_Bold', sans-serif;
+    font-size: 20px;
+    text-transform: uppercase;
+
+}
+
+.card-padin-top{
+    padding-top: 100px;
+}
+
+.card-padin-bot{
+    padding-top: 150px;
+}
+
+.miembros-titulo h2 {
+    font-family: 'Purista_Bold', sans-serif;
+    font-size: 80px;
+    color: #FFF;
+}
+
+.miembros-titulo span {
+    font-family: 'Purista_Bold', sans-serif;
+    font-size: 80px;
+    color: #0091DE;
+}
+
+/*<-------------------end miembros------------------------>*/
+
+
+
+/*<-------------------BLOG------------------------>*/
+
+.Fondo-portadaBlog{
+    /* Set a specific height */
+    /* Create the parallax scrolling effect */
+    background-image: url('../img/fondo.png');
+    height: 60vh;
+    width: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.Fondo-portadaSingle {
+    /* Set a specific height */
+    /* Create the parallax scrolling effect */
+    background-image: url('../img/fondo.png');
+    height: 30vh;
+    width: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.blog-titulo{
+    padding-top: 280px;
+}
+
+.single-titulo{
+    padding-top: 140px;
+}
+
+.blog-titulo h2 {
+    font-family: 'Purista_Bold', sans-serif;
+    font-size: 80px;
+    color: #FFF;
+}
+
+.blog-titulo h3 a{
+    text-decoration: none;
+    color: #FFF;
+    transition: all .2s ease;
+}
+
+.blog-titulo h3 a:hover{
+    color: #00304A;
+    transition: all .2s ease;
+}
+
+.blog-titulo span {
+    font-family: 'Purista_Bold', sans-serif;
+    font-size: 80px;
+    color: #0091DE;
+}
+
+/*Single*/
+
+.single-titulo h2 {
+    font-family: 'Purista_Bold', sans-serif;
+    font-size: 80px;
+    color: #FFF;
+}
+
+.single-titulo h3{
+    color: #FFF;
+    transition: all .2s ease;
+}
+
+.single-titulo h3:hover{
+    color: #00304A;
+    transition: all .2s ease;
+}
+
+.single-titulo span {
+    font-family: 'Purista_Bold', sans-serif;
+    font-size: 80px;
+    color: #0091DE;
+}
+
+/*Fin single*/
+
+.blog-text-inicio {
+    margin-top: 100px;
+}
+
+.blog-text-inicio p {
+    font-family: 'Purista', sans-serif;
+    font-size: 20px;
+    color: #000;
+}
+
+.blog-text h3 {
+    font-size: 18px;
+}
+
+.blog-text h3 a{
+    text-decoration: none;
+    color: #181818;
+    transition: all .3s ease;
+}
+
+.blog-text h3 a:hover{
+    color: #079907;
+    transition: all .3s ease;
+
+}
+
+.blog-text p {
+    font-family: 'Purista', sans-serif;
+    font-size: 14px;
+    color: #000;
+}
+
+.blog-text ul li a {
+    font-family: 'Purista_light', sans-serif;
+    font-size: 18px;
+    color: rgb(2, 51, 24);
+}
+
+.blog-text button{
+    background-color: #FBAF0F;
+    border-radius: 1px !important;
+}
+
+.blog-text button a{
+    font-family: 'Purista_light', sans-serif;
+    text-decoration: none;
+    color: #FFF;
+}
+
+.blog-text button:hover{
+    background-color: rgb(192, 133, 4);
+    
+}
+
+.blog-text button a:hover{
+    font-family: 'Purista_light', sans-serif;
+    text-decoration: none;
+    color: #000;
+}
+
+
+.blog-text-dos {
+    margin-top: 10px;
+    
+}
+
+.blog-text-dos p {
+    font-family: 'Purista', sans-serif;
+    font-size: 20px;
+    color: #000;
+}
+
+.efectoglow {
+    overflow-x: hidden;
+}
+.efectoglow p{
+    overflow-x: hidden;
+}
+
+
+
+
+/*<-------------------end BLOG------------------------>*/
+
+
+
+/*<-------------------UNIDAD------------------------>*/
+
+.Fondo-portadaUnidad{
+  /* Set a specific height */
+  /* Create the parallax scrolling effect */
+  background-image: url('../img/unit.png');
+  height: 50vh;
+  width: 100vw;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.color-portadaUnidad {
+    background-color: #FBAF0F;
+}
+
+.color-portadaUnidad-white {
+    background-color: #FFF;
+}
+
+.unidad-titulo {
+    padding-top: 300px;
+    padding-left: 300px;
+}
+
+.padin-unidTitulo-left{
+    padding-left: 100px;
+}
+
+.unidad-titulo h2 {
+    font-family: 'Purista_Bold', sans-serif;
+    font-size: 70px;
+    color: #317ee2;
+}
+
+.unidad-titulo span {
+    font-family: 'Purista_Bold', sans-serif;
+    font-size: 70px;
+    color: #317ee2;
+}
+
+.text-unidad h2,h3,h4,h5 {
+    font-family: 'Purista_Bold', sans-serif;
+}
+
+.text-unidad-card h2{
+    font-family: 'Purista_Bold', sans-serif;
+    font-size: 70px;
+    text-transform: uppercase;
+}
+
+.text-unidad p {
+    font-family: 'Purista', sans-serif;
+}
+
+.text-unidad h3 {
+    font-size: 50px;
+    text-transform: uppercase;
+    color: #317ee2;
+}
+
+.text-unidad h4 {
+    font-size: 20px;
+    
+}
+
+.text-unidad h4 a{
+    text-decoration: none;   
+    color: #317ee2;
+    transition: all .3s ease;
+}
+
+.text-unidad h4 a:hover {
+    color: #fff;
+    transition: all .3s ease;
+}
+
+.text-unidad h5 {
+    text-transform: uppercase;
+    color: #FBAF0F;
+}
+
+
+/*<-------------------END UNIDAD------------------------>*/
+
+/*<-------------------404------------------------>*/
+
+.text-404 h2{
+    font-family: 'Purista_Bold', sans-serif;
+    text-transform: uppercase;
+    font-size: 210px;
+    line-height: 0.6 !important;
+}
+
+.text-404 h3{
+    font-family: 'Purista_Bold', sans-serif;
+    text-transform: uppercase;
+    font-size: 40px;
+}
+
+.text-404 p{
+    font-family: 'Purista_light', sans-serif;
+    text-transform: uppercase;
+    font-size: 40px;
+    line-height: 2.10;
+}
+
+.text-404 .btn{
+    font-family: 'Purista', sans-serif;
+    text-transform: uppercase;
+    padding: 20px 40px;
+    border-radius: 1px !important;
+}
+
+/*<-------------------END 404------------------------>*/
+
+
+/*MEDIA QUERIES*/
+
+@media screen and (max-width: 1549px){
+
+    .nosotros h2 {
+    font-size: 3.2rem;
+    }
+    .nosotros h3 {
+    font-size: 1.9rem;
+    }
+    .nosotros p,span {
+    font-size: 1.2rem;
+    }
+    .nosotros img {
+    height: 158px;
+    width: 170px;
+    }
+}
+
+@media screen and (max-width: 992px){
+
+    .nosotros h2 {
+    font-size: 2.2rem;
+    }
+    .nosotros h3 {
+    font-size: 1.5rem;
+    }
+    .nosotros p,span {
+    font-size: 1.0rem;
+    }
+    .nosotros img {
+    height: 128px;
+    width: 140px;
+    }
+    .colorFondo-Dos {
+    height: 150vh;
+    }
+    .p-TituloCuatro h2{
+        font-size: 4.2rem;
+    }
+    .p-TituloCuatro p{
+        font-size: 2.0rem;
+    }
+
+    .t-events h2{
+        font-family: 'Purista_Bold', sans-serif, cursive;
+        font-size: 3.2rem;
+        color: #ffffff;
+    }
+
+    .t-events p{
+        font-family: 'Purista', sans-serif, cursive;
+        font-size: 1.1rem;
+        color: #ffffff;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+	
+	.menu_bar span {
+		float: right;
+		font-size: 40px;
+	}
+ 
+	
+	header nav ul li {
+		display: block;
+		border-bottom:1px solid rgba(255,255,255,.5);
+	}
+ 
+	header nav ul li a {
+		display: block;
+	}
+ 
+	header nav ul li:hover .children {
+		display: none;
+	}
+ 
+	header nav ul li .children {
+		width: 100%;
+		position: relative;
+	}
+ 
+	header nav ul li .children li a {
+		margin-left:20px;
+	}
+ 
+	header nav ul li .caret {
+		float: right;
+    }
+    
+    .my-menu-scroll {
+        background-color: rgba(15, 116, 184, 0.7);
+        transition: all .5s ease-in;
+    }
+
+    .unidad-titulo {
+        padding-top: 300px;
+        padding-left: 140px;
+    }
+    
+    .text-unidad-card h2{
+    font-size: 60px;
+    }
+}
+
+@media screen and (max-width: 414px){
+    
+    .nosotros-titulo h2 {
+        font-family: 'Purista_Bold', sans-serif;
+        font-size: 50px;
+        color: #FFF;
+    }
+    
+    .nosotros-titulo span {
+        font-family: 'Purista_Bold', sans-serif;
+        font-size: 50px;
+        color: #0091DE;
+    }
+
+    .nosotros-text p {
+        font-family: 'Purista', sans-serif;
+        font-size: 15px;
+        color: #000;
+    }
+
+    .nosotros-text-dos p {
+        font-family: 'Purista', sans-serif;
+        font-size: 15px;
+        color: #000;
+    }
+
+    .nosotros-historia h3 {
+        font-family: 'Purista_Bold', sans-serif;
+        font-size: 50px;
+        margin-top: -20px;
+    }
+    
+    .nosotros-historia h4 {
+        font-family: 'Purista', sans-serif;
+        font-size: 12px;
+    }
+
+    .miembros-titulo{
+        padding-top: 200px;
+    }
+
+    .miembros-titulo h2{
+        font-size: 60px;
+    }
+
+    .miembros-titulo span{
+        font-size: 60px;
+    }
+
+    .miembros-text h2 {
+        font-size: 30px;
+    }
+
+
+    .text-unidad-card h2{
+        font-size: 40px;
+    }
+
+    .unidad-titulo {
+        padding-top: 180px;
+        padding-left: 16px;
+    }
+
+    .text-404 h2{
+        font-family: 'Purista_Bold', sans-serif;
+        text-transform: uppercase;
+        font-size: 110px;
+        line-height: 0.6 !important;
+    }
+    
+    .text-404 h3{
+        font-family: 'Purista_Bold', sans-serif;
+        text-transform: uppercase;
+        font-size: 20px;
+    }
+    
+    .text-404 p{
+        font-family: 'Purista_light', sans-serif;
+        text-transform: uppercase;
+        font-size: 20px;
+        line-height: 2.10;
+    }
+    
+    .text-404 .btn{
+        font-family: 'Purista', sans-serif;
+        text-transform: uppercase;
+        padding: 10px 20px;
+        border-radius: 1px !important;
+    }
+}
+
+@media screen and (max-width: 411px){
+   
+    .separador {
+        margin-left: 5px;
+    }
+    .p-TituloCuatro h2{
+        font-size: 3.2rem;
+    }
+    .p-TituloCuatro p{
+        font-size: 1.0rem;
+    }
+
+    .t-events h2{
+        font-family: 'Purista_Bold', sans-serif, cursive;
+        font-size: 3.2rem;
+        color: #ffffff;
+    }
+
+    .t-events p{
+        font-family: 'Purista', sans-serif, cursive;
+        font-size: 1.1rem;
+        color: #ffffff;
+    }
+
+    .nosotros-titulo h2 {
+        font-family: 'Purista_Bold', sans-serif;
+        font-size: 50px;
+        color: #FFF;
+    }
+    
+    .nosotros-titulo span {
+        font-family: 'Purista_Bold', sans-serif;
+        font-size: 50px;
+        color: #0091DE;
+    }
+
+    .nosotros-text p {
+        font-family: 'Purista', sans-serif;
+        font-size: 15px;
+        color: #000;
+    }
+
+    .nosotros-text-dos p {
+        font-family: 'Purista', sans-serif;
+        font-size: 15px;
+        color: #000;
+    }
+
+    .nosotros-historia h3 {
+        font-family: 'Purista_Bold', sans-serif;
+        font-size: 50px;
+        margin-top: -20px;
+    }
+    
+    .nosotros-historia h4 {
+        font-family: 'Purista', sans-serif;
+        font-size: 12px;
+    }
+
+    .blog-titulo{
+        padding-top: 200px;
+    }
+    
+    .single-titulo{
+        padding-top: 200px;
+    }
+
+    .Fondo-portadaSingle {
+        height: 50vh;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .miembros-titulo{
+        padding-top: 180px;
+    }
+
+    .text-unidad-card h2{
+        font-size: 40px;
+    }
+
+    .unidad-titulo {
+        padding-top: 200px;
+        padding-left: 40px;
+    }
+
+    .text-404 h2{
+        font-family: 'Purista_Bold', sans-serif;
+        text-transform: uppercase;
+        font-size: 110px;
+        line-height: 0.6 !important;
+    }
+    
+    .text-404 h3{
+        font-family: 'Purista_Bold', sans-serif;
+        text-transform: uppercase;
+        font-size: 20px;
+    }
+    
+    .text-404 p{
+        font-family: 'Purista_light', sans-serif;
+        text-transform: uppercase;
+        font-size: 20px;
+        line-height: 2.10;
+    }
+    
+    .text-404 .btn{
+        font-family: 'Purista', sans-serif;
+        text-transform: uppercase;
+        padding: 10px 20px;
+        border-radius: 1px !important;
+    }
+    
+}
+
+@media screen and (max-width: 360px){
+    .t-events h2{
+        font-family: 'Purista_Bold', sans-serif, cursive;
+        font-size: 2.5em;
+        color: #ffffff;
+    }
+
+    .t-events p{
+        font-family: 'Purista', sans-serif, cursive;
+        font-size: 1.1rem;
+        color: #ffffff;
+    }
+   .color-fondo {
+       background-color: #317ee2 !important;
+   }
+
+   .my-menu {
+    background-color: rgba(15, 116, 184, 0.7);
+    transition: all .5s ease-in;
+   }
+
+   .my-menu-scroll {
+    background-color: rgba(245, 180, 0, 0.7);
+    transition: all .5s ease-in;
+    }
+
+    .nosotros-titulo h2 {
+        font-family: 'Purista_Bold', sans-serif;
+        font-size: 50px;
+        color: #FFF;
+    }
+    
+    .nosotros-titulo span {
+        font-family: 'Purista_Bold', sans-serif;
+        font-size: 50px;
+        color: #0091DE;
+    }
+
+    .nosotros-text p {
+        font-family: 'Purista', sans-serif;
+        font-size: 15px;
+        color: #000;
+    }
+
+    .nosotros-text-dos p {
+        font-family: 'Purista', sans-serif;
+        font-size: 15px;
+        color: #000;
+    }
+
+    .nosotros-historia h3 {
+        font-family: 'Purista_Bold', sans-serif;
+        font-size: 50px;
+        margin-top: -20px;
+    }
+    
+    .nosotros-historia h4 {
+        font-family: 'Purista', sans-serif;
+        font-size: 12px;
+    }
+
+    .unidad-titulo {
+        padding-top: 180px;
+        padding-left: 16px;
+    }
+
+    .padin-unidTitulo-left{
+        padding-left: 20px;
+    }
+
+    .unidad-titulo h2{
+        font-size: 60px;
+    }
+
+    .unidad-titulo span{
+        font-size: 60px;
+    }
+
+    .text-unidad-card h2{
+        font-size: 30px;
+    }
+
+    .text-404 h2{
+        font-family: 'Purista_Bold', sans-serif;
+        text-transform: uppercase;
+        font-size: 110px;
+        line-height: 0.6 !important;
+    }
+    
+    .text-404 h3{
+        font-family: 'Purista_Bold', sans-serif;
+        text-transform: uppercase;
+        font-size: 20px;
+    }
+    
+    .text-404 p{
+        font-family: 'Purista_light', sans-serif;
+        text-transform: uppercase;
+        font-size: 20px;
+        line-height: 2.10;
+    }
+    
+    .text-404 .btn{
+        font-family: 'Purista', sans-serif;
+        text-transform: uppercase;
+        padding: 10px 20px;
+        border-radius: 1px !important;
+    }
+    
+    
+}
+
