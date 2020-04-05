@@ -1,3 +1,5 @@
+@import "mobile.css";
+
 /*LETRAS*/
 @font-face {
     font-family: "Purista_Bold";
@@ -71,7 +73,7 @@ body {
 .my-menu {
     width: 100%;
     background-color: rgba(0,0,0,.1);
-    position: fixed;
+    position: absolute;
     top: 0;
     z-index: 9999;
     transition: all .5s ease-out;
@@ -82,101 +84,49 @@ body {
     transition: all .5s ease-in;
 }
 
-/*CUANDO SE BAJA CON EL SCROLL*/
-.my-menu-scroll {
-    width: 100%;
-    background-color: rgba(0,0,0,.1);
-    position: fixed;
-    top: 0;
-    z-index: 9999;
-    transition: all .5s ease-out;
-}
-
-.my-menu-scroll:hover {
-    width: 100%;
-    background-color: rgba(15, 116, 184, 0.7);
-    position: fixed;
-    top: 0;
-    z-index: 9999;
-    transition: all .5s ease-in;
-}
-
-
-/*-------------*****------------------*/
-
-
-.my-menu ul li,
-.my-menu-scroll ul li{
-    font-family: 'Purista_bold', sans-serif;
-    font-size: 1.2em;
+/*ENCABEZADO*/
+.menu-encabezado ul > li {
+    font-family: 'Purista_Bold';
     text-transform: uppercase;
     
 }
 
-.my-menu ul li:hover,
-.my-menu-scroll ul li:hover{
-    background-color: #fff;
-    
+.menu-encabezado ul > li > a{
+    display: block;
+    color: white;
+    transition: all 300ms;
 }
 
-.my-menu ul li a,
-.my-menu-scroll ul li a{
-    color: #fff;
-    transition: all .3s ease;
-}
-
-.my-menu ul li a:hover,
-.my-menu-scroll ul li a:hover{
+.menu-encabezado ul > li > a:hover{
+    background-color: white;
     color: #FBAF0F;
-    transition: all .3s ease;
+}
+
+.menu-encabezado ul > li > ul{
+    display: none;
+}
+
+.menu-encabezado ul > li:hover > ul{
+    display: block;
+    position: absolute;
+    list-style: none;
+    z-index: 2;
+}
+
+.menu-encabezado ul > li:hover > ul > li{
+    background-color: rgba(15, 116, 184, 0.9);
+    padding: 10px;
+    margin-left: -40px;
+  
+}
+
+.menu-encabezado ul > li:hover > ul > li > a{
+    display: block;
 }
 
 .active {
-    background-color: #fff;
-    
-}
-
-.my-menu ul li a.active {
-    color: #317ee2;
-    
-}
-
-.my-menu-scroll ul li a.active{
-    color: #FBAF0F;
-}
-
-.my-menu-scroll ul li a.active{
-    background-color: rgba(255, 255, 255, 0);;
-}
-
-
-header nav ul li:hover .children {
-    display:block;
-}
-
-header nav ul li .children {
-    
-    display: none;
-	background-color: rgba(15, 116, 184, .3);
-	position: absolute;
-	width: 40%;
-    z-index:1000;
-    transition: all .5s ease-out;
-}
-
-header nav ul li .children:hover {
-    background-color: rgba(15, 116, 184, .6);
-    transition: all .5s ease-in;
-}
-
-header nav ul li .children li {
-	display:block;
-	overflow: hidden;
-	border-bottom: 1px solid rgba(255,255,255,.1);
-}
- 
-header nav ul li .children li a {
-	display: block;
+    background-color: white;
+    color: #FBAF0F !important;
 }
 
 
@@ -359,6 +309,8 @@ background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32
     margin-left: 20px;
     
 }
+/* FIN FOOTER */
+
 
 /*-------------------BOTON UP-----------------------*/
 .toTop {
@@ -407,7 +359,7 @@ background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32
 .Fondo-portadaNosotros{
       /* Set a specific height */
     /* Create the parallax scrolling effect */
-    background-image: url('../img/nosotros.png');
+    background-image: url('../img/nosotros.jpg');
     height: 70vh;
     width: 100vw;
     background-attachment: fixed;
@@ -491,7 +443,7 @@ background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32
 .Fondo-portadaMiembros{
     /* Set a specific height */
   /* Create the parallax scrolling effect */
-  background-image: url('../img/reclutamiento.png');
+  background-image: url('../img/reclutamiento.jpg');
   height: 50vh;
   width: 100vw;
   background-attachment: fixed;
@@ -728,7 +680,7 @@ background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32
 .Fondo-portadaUnidad{
   /* Set a specific height */
   /* Create the parallax scrolling effect */
-  background-image: url('../img/unit.png');
+  background-image: url('../img/unit.jpg');
   height: 50vh;
   width: 100vw;
   background-attachment: fixed;
