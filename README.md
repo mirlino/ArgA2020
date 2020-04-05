@@ -22,6 +22,3 @@ La Página está estructurada utilizando
 Página live de presentación: [`Plantilla`](https://mirlino.github.io/ArgA2020/)
 
 
-### Muestra de página live
-
-Página live de presentación: [`Plantilla`](https://mirlino.github.io/ArgA2020/)
