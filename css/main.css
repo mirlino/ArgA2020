@@ -996,6 +996,98 @@ background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32
 /*<-------------------END 404------------------------>*/
 
 
+/*<------------------- EVENTOS ---------------------->*/
+
+.event-rel > span {
+    position: absolute;
+    display: block;
+    font-size: 20px;
+    text-align: right;
+    color: rgb(255, 254, 255, 1);
+    margin-left: 8px;
+    margin: 5px;
+    padding: 4px;
+    padding-left: 5px;
+    padding-right: 5px;
+    background-color:rgba(245, 180, 0, 0.9);
+    
+
+}
+
+.event-rel > a{
+    display: block;
+    z-index: 999;
+}
+
+.event-rel > a > h4 {
+    position: absolute;
+    top:0;
+    padding: 20px;
+    margin: 66px 95px;
+    color: rgb(255, 254, 255, 1);
+    transition: all 300ms;
+}
+
+.event-rel > a > p{
+   position: absolute;
+   top: 0;
+   margin: 109px 152px;
+   color: rgb(255, 254, 255, 1);
+   transition: all 300ms;
+}
+
+.event-rel > a > div > p{
+    position: absolute;
+    top: 0;
+    text-align: center;
+    color: rgb(255, 254, 255, 0);
+    margin-top: 118px;
+    margin-left: -18px;
+    padding: 24px;
+    transition: all 300ms;
+    z-index: 0;
+}
+
+.event-rel > a:hover > h4 {
+    animation-name: titleMove;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    
+}
+
+.event-rel > a:hover > p {
+    animation-name: littleMove;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    
+}
+
+.event-rel > a:hover > div >p{
+    color: rgb(255, 254, 255, 1);
+}
+
+
+@keyframes titleMove {
+    0%{
+        margin-top: 66px;
+    } 50%{
+        margin-top: 61px;
+    } 100%{
+        margin-top: 66px;
+    }
+}
+
+@keyframes littleMove {
+    0%{
+        margin-top: 109px;
+    } 50%{
+        margin-top: 100px;
+    } 100%{
+        margin-top: 109px;
+    }
+}
+ 
+
 /*MEDIA QUERIES*/
 
 @media screen and (max-width: 1549px){
