@@ -1,5 +1,5 @@
 # Página Web Clan ArgA (Update)
-Proyecto: plantilla web para la actualización de página en 2020.
+Proyecto: plantilla web para la actualización de página en 2021.
 
 ![template](https://img.shields.io/badge/Status-Woking-red.svg)
 ![techs](https://img.shields.io/badge/tech-HTML--JS--CSS-yellow.svg)
