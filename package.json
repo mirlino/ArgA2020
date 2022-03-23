@@ -1,0 +1,29 @@
+{
+  "name": "militarysimulate",
+  "version": "1.0.0",
+  "description": "page to refer a military simulate clan web page",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/main.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mirlino/ArgA2020.git"
+  },
+  "keywords": [
+    "arma",
+    "3",
+    "military",
+    "simulate",
+    "games"
+  ],
+  "author": "Mirlino Marine",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mirlino/ArgA2020/issues"
+  },
+  "homepage": "https://github.com/mirlino/ArgA2020#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.1"
+  }
+}

@@ -1,0 +1,1565 @@
+// COLORS
+// :root{
+// --mainColor: #317ee2;
+// --secondaryColor: #fbaf0f;
+
+// }
+
+$color-primary: #317ee2;
+$color-secondary: #fbaf0f;
+$color-background-white:#fff;
+
+$text-white: #fff;
+$text-grey: #ccc;
+$text-black: #000;
+$text-green: #079907;
+
+@import "mobile.css";
+
+/*LETRAS*/
+@font-face {
+    font-family: "Purista_Bold";
+    src: url("../font/Purista\ Bold.otf");
+}
+@font-face {
+    font-family: "Purista_light";
+    src: url("../font/Purista\ Light.otf");
+}
+@font-face {
+    font-family: "Purista";
+    src: url("../font/Purista\ Medium.otf");
+}
+@font-face {
+    font-family: "webSymbols";
+    src: url("../font/WebSymbols-Regular.otf");
+}
+
+*,
+*::after,
+*::before{
+    box-sizing: inherit;
+
+}
+
+html{
+    font-size: 62.5%;
+    
+}
+
+body {
+    background-color: #181818;
+    box-sizing: border-box;
+}
+
+.zoneout {
+    overflow: hidden;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/*------------FONDOS DE SECCIONES--------------*/
+.colorFondo-Dos {
+    background-image: url("../img/fondoDos.png");
+    background-size: cover;
+    height: 100vh;
+    //width: 90vw;
+    display: table;
+}
+
+.colorFondo-Tres {
+    width: 100%;
+    background-image: url("../img/fondoTres.png");
+    background-size: cover;
+    height: 100vh;
+    display: table;
+}
+
+.colorFondo-Cuatro {
+    width: 100%;
+    background-color: #1a1a1a;
+    background-size: cover;
+    height: 100vh;
+    display: table;
+}
+
+.colorFondo-Cinco {
+    background-color: $color-primary;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+    display: table;
+}
+
+.colorFondo-Seis {
+    background-color: #3d3c3c;
+    background-size: cover;
+    height: 45vh;
+    width: 100vw;
+    display: table;
+}
+
+.copyright {
+    background-color: #00304a;
+    background-size: cover;
+    height: 5vh;
+    width: 100vw;
+    display: table;
+}
+/*---------------FIN FONDOS------------------------*/
+
+/*---------------MENU ENCABEZADO-------------------*/
+.my-menu {
+    width: 100%;
+    background-color: rgba($color-primary, 0.7);
+    position: absolute;
+    top: 0;
+    z-index: 9999;
+    transition: all 0.5s ease-out;
+}
+
+.my-menu:hover {
+    background-color: rgba($color-secondary, 0.7);
+    transition: all 0.5s ease-in;
+}
+
+/*ENCABEZADO*/
+.menu-encabezado ul > li {
+    font-family: "Purista_Bold";
+    text-transform: uppercase;
+}
+
+.menu-encabezado ul > li > a {
+    display: block;
+    color: $text-white;
+    font-size: 2rem;
+    transition: all 300ms;
+}
+
+.menu-encabezado ul > li > a:hover {
+    background-color: $text-white;
+    color: $color-secondary;
+}
+
+.menu-encabezado ul > li > ul {
+    display: none;
+}
+
+.menu-encabezado ul > li:hover > ul {
+    display: block;
+    position: absolute;
+    list-style: none;
+    z-index: 2;
+}
+
+.menu-encabezado ul > li:hover > ul > li {
+    background-color: rgba($color-primary, 0.9);
+    padding: 1rem;
+    margin-left: -4rem;
+}
+
+.menu-encabezado ul > li:hover > ul > li > a {
+    display: block;
+    
+}
+
+.active {
+    background-color: $color-background-white;
+    color: $color-secondary !important;
+}
+
+/*CUSTOM ICON MENU TOGGLE*/
+.custom-toggler.navbar-toggler {
+    border-color: $color-background-white !important;
+}
+
+.custom-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 254, 255, 0.7)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+/*END ICON*/
+
+/*---------------FIN MENU ENCABEZADO--------------------*/
+
+.columna {
+    background-color: $color-background-white;
+    position: relative;
+    overflow: visible;
+    z-index: 4;
+    box-shadow: .2rem .5rem .8rem #000;
+}
+
+.caja1 {
+    top: -13rem;
+    padding: 3rem;
+    padding-top: 1rem;
+    margin: 1rem 1.5rem;
+    z-index: 4;
+}
+.cotejo {
+    margin-bottom: -8rem;
+}
+
+.cotejo a {
+    text-decoration: none;
+}
+
+.separador {
+    margin-left: 3.5rem;
+}
+
+.nosotros {
+    color: $text-white;
+}
+
+.nosotros img {
+    height: 20.18rem;
+    width: 20.2rem;
+}
+
+.nosotros h2 {
+    font-family: "Purista_Bold", sans-serif, cursive;
+    font-size: 5.2rem;
+}
+.nosotros h3 {
+    font-family: "Purista", sans-serif, cursive;
+    font-size: 3.1rem;
+}
+
+.nosotros p,
+span {
+    font-family: "Purista_light", sans-serif, cursive;
+    font-size: 1.9rem;
+}
+
+.nosotros-prim p {
+    font-family: "Purista_light", sans-serif, cursive;
+    font-size: 1.9rem;
+    color: $text-white;
+}
+
+.nosotros-font-text h3 {
+    font-family: "Purista_Bold", sans-serif, cursive;
+}
+
+.nosotros-font-text p {
+    font-family: "Purista", sans-serif, cursive;
+}
+
+.nosotros-font-text a {
+    font-family: "Purista_light", sans-serif, cursive;
+}
+
+.texto-btn {
+    font-family: "Purista_light", sans-serif, cursive;
+    color: $text-white !important;
+    border: .2rem solid $color-primary !important;
+    border-radius: .1rem !important;
+    -webkit-border-radius: .1rem !important;
+    -moz-border-radius: .1rem !important;
+    -ms-border-radius: .1rem !important;
+    -o-border-radius: .1rem !important;
+}
+
+.admin span {
+    font-family: "Purista_Bold", sans-serif;
+    font-size: 1.6rem !important;
+}
+
+.admin h3 {
+    font-size: 1.8px;
+}
+
+/* COLUMNA CUATRO*/
+
+/*titulo y sub-titulo*/
+.t-events h2 {
+    font-family: "Purista_Bold", sans-serif, cursive;
+    font-size: 3.5em;
+    color: $text-white;
+}
+
+.t-events p {
+    font-family: "Purista", sans-serif, cursive;
+    font-size: 1.6rem;
+    color: $text-white;
+}
+
+/*cards eventos*/
+.textos-event-card {
+    font-family: "Purista_light", sans-serif, cursive;
+}
+
+.textos-event-card h3 {
+    font-family: "Purista_Bold", sans-serif, cursive;
+}
+
+.textos-event-card p {
+    font-family: "Purista", sans-serif, cursive;
+}
+
+/*CONTENIDO DEL FOOTER*/
+.footer-font-text h3 {
+    font-family: "Purista_Bold", sans-serif, cursive;
+    color: $color-secondary;
+}
+
+.footer-font-text h4 {
+    font-family: "Purista_Bold", sans-serif, cursive;
+    font-size: 16px;
+    color: $text-white;
+}
+
+.footer-font-text p {
+    font-family: "Purista", sans-serif, cursive;
+    color: $text-white;
+}
+
+.footer-redes-fb img {
+    height: 22px;
+    width: 15px;
+}
+
+.footer-redes-tw img {
+    height: 18px;
+    width: 22px;
+}
+.footer-redes-yo img {
+    height: 15px;
+    width: 22px;
+}
+
+.footer-font-text-btn a {
+    font-family: "Purista_light", sans-serif, cursive;
+    font-size: 1.6rem;
+    color: $text-white;
+    border: .2rem solid $color-secondary !important;
+    border-radius: .1rem !important;
+    padding: .5rem 3rem;
+    -webkit-border-radius: .1rem !important;
+    -moz-border-radius: .1rem !important;
+    -ms-border-radius: .1rem !important;
+    -o-border-radius: .1rem !important;
+}
+
+.footer-font-text span {
+    font-family: "Purista_light", sans-serif, cursive;
+    font-size: 1.4rem;
+    color: $text-grey;
+}
+
+.footer-separador {
+    margin-left: 2rem;
+}
+/* FIN FOOTER */
+
+/*-------------------BOTON UP-----------------------*/
+.toTop {
+    font-family: "Purista_Bold", sans-serif, cursive;
+    font-size: 1.8rem;
+    color: $text-white;
+    text-decoration: none;
+    padding: 2rem;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+    background-color: $color-secondary;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    opacity: 0.5;
+    filter: alpha(opacity=50); /* For IE8 and earlier */
+    transition: all 0.3s ease;
+    z-index: 40;
+}
+
+.toTop:hover {
+    color: $color-secondary;
+    background-color: $color-primary;
+    margin-bottom: 1.5rem;
+    opacity: 1;
+    filter: alpha(opacity=100); /* For IE8 and earlier */
+    transition: all 0.3s ease;
+}
+
+.toTopY {
+    opacity: 0;
+    filter: alpha(opacity=0); /* For IE8 and earlier */
+    transition: all 0.3s ease;
+}
+
+.tophead a {
+    text-decoration: none;
+}
+/*<----------END BOTON UP--------------->*/
+
+/*----------------- NOSOTROS -----------------------*/
+
+.Fondo-portadaNosotros {
+/* Set a specific height */
+/* Create the parallax scrolling effect */
+    background-image: url("../img/nosotros.jpg");
+    height: 70vh;
+    width: 100vw;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.color-portadaNosotros {
+    background-color: $color-background-white;
+}
+
+.padin-seccion {
+    padding-top: 20rem;
+    padding-bottom: 20rem;
+}
+
+.nosotros-titulo {
+    padding-top: 20.8rem;
+}
+
+.nosotros-titulo h2 {
+    font-family: "Purista_Bold", sans-serif;
+    font-size: 8rem;
+    color: $text-white;
+}
+
+.nosotros-titulo span {
+    font-family: "Purista_Bold", sans-serif;
+    font-size: 8rem;
+    color: $color-primary;
+}
+
+.nosotros-text-inicio {
+    margin-top: 10rem;
+}
+
+.nosotros-text-inicio p {
+    font-family: "Purista", sans-serif;
+    font-size: 2rem;
+    color: $text-black;
+}
+
+.nosotros-text p {
+    font-family: "Purista", sans-serif;
+    font-size: 2rem;
+    color: $text-black;
+}
+
+.nosotros-text-dos {
+    margin-top: 1rem;
+}
+
+.nosotros-text-dos p {
+    font-family: "Purista", sans-serif;
+    font-size: 2rem;
+    color: $text-black;
+}
+
+.nosotros-historia {
+    padding-bottom: 10rem;
+}
+
+.nosotros-historia h3 {
+    font-family: "Purista_Bold", sans-serif;
+    font-size: 7rem;
+    margin-top: -2rem;
+}
+
+.nosotros-historia h4 {
+    font-family: "Purista", sans-serif;
+    font-size: 2rem;
+}
+/*<--------------------END NOSOTROS------------------------------>*/
+
+/*--------------------MIEMBROS------------------------------*/
+.Fondo-portadaMiembros {
+    /* Set a specific height */
+    /* Create the parallax scrolling effect */
+    background-image: url("../img/reclutamiento.jpg");
+    height: 50vh;
+    width: 100vw;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.miembros-titulo {
+    padding-top: 20.3rem;
+}
+
+.miembros-text h2 {
+    font-family: "Purista_Bold", sans-serif;
+    font-size: 5rem;
+    text-transform: uppercase;
+}
+
+.miembros-text .btn {
+    text-decoration: none;
+    color: $text-green;
+    font-family: "Purista_Bold", sans-serif;
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+
+.miembros-text .btn:hover {
+    text-decoration: none;
+    color: $color-secondary;
+    font-family: "Purista_Bold", sans-serif;
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+
+.card-padin-top {
+    padding-top: 10rem;
+}
+
+.card-padin-bot {
+    padding-top: 10.5rem;
+}
+
+.miembros-titulo h2 {
+    font-family: "Purista_Bold", sans-serif;
+    font-size: 8rem;
+    color: $text-white;
+}
+
+.miembros-titulo span {
+    font-family: "Purista_Bold", sans-serif;
+    font-size: 8rem;
+    color: $color-primary;
+}
+
+.rank-military > img {
+    width: 5%;
+}
+
+/*<-------------------end miembros------------------------>*/
+
+/*<-------------------BLOG------------------------>*/
+
+.Fondo-portadaBlog {
+    /* Set a specific height */
+    /* Create the parallax scrolling effect */
+    background-image: url("../img/fondo.png");
+    height: 60vh;
+    width: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.over {
+    overflow-y: hidden;
+}
+
+.contenidoSuperior {
+    margin-top: 40.25rem;
+}
+
+.imagenFondo { position: absolute; background-size: cover; background-attachment: fixed; background-position: center; background-repeat: no-repeat; width: 100vw; height: 100vh; z-index: -999; margin-top: -60.32rem; margin-left: -1.5rem; filter: blur(.4rem); -webkit-filter: blur(.4rem);}
+
+.imagenFondo-blog { position: absolute; background-size: cover; background-attachment: fixed; background-position: center; background-repeat: no-repeat; width: 100vw; height: 100vh; z-index: -999; margin-top: -40.3rem; margin-left: -1.5rem; filter: blur(.2rem); -webkit-filter: blur(.2rem);}
+
+#not-intro {
+    margin: 0 auto;
+    margin-top: -30rem;
+}
+
+/*intro noticias*/
+.not-portada > span {
+    font-family: "Purista_light", sans-serif;
+    font-size: 2rem;
+    color: $text-grey;
+}
+
+.not-portada > h2 {
+    font-family: "Purista_Bold", sans-serif;
+    font-size: 3rem;
+    color: $color-primary;
+}
+
+.not-portada > h2 > a {
+    text-decoration: none;
+    color: $text-white;
+}
+
+.not-portada > h2 > a > span {
+    font-family: "Purista_Bold", sans-serif;
+    font-size: 3rem;
+    color: $color-primary;
+}
+
+.not-portada > p {
+    font-family: "Purista", sans-serif;
+    font-size: 2rem;
+    color: $text-white;
+}
+
+/*
+.Fondo-portadaSingle {
+    /* Set a specific height 
+    /* Create the parallax scrolling effect 
+    background-image: url('../img/fondo.png');
+    height: 30vh;
+    width: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+*/
+.blog-titulo {
+    padding-top: 20.8rem;
+}
+
+.single-titulo {
+    position: absolute;
+    margin-top: 20.7rem;
+}
+
+.blog-titulo h2 {
+    font-family: "Purista_Bold", sans-serif;
+    font-size: 8rem;
+    color: $text-white;
+}
+
+.blog-titulo h3 a { text-decoration: none; color: $text-white; transition: all 0.2s ease; -webkit-transition: all 0.2s ease; -moz-transition: all 0.2s ease; -ms-transition: all 0.2s ease; -o-transition: all 0.2s ease;
+}
+
+.blog-titulo h3 a:hover { color: #00304a; transition: all 0.2s ease; -webkit-transition: all 0.2s ease; -moz-transition: all 0.2s ease; -ms-transition: all 0.2s ease; -o-transition: all 0.2s ease;
+}
+
+.blog-titulo span {
+    font-family: "Purista_Bold", sans-serif;
+    font-size: 8rem;
+    color: $color-primary;
+}
+
+/*Single*/
+
+.single-titulo h2 {
+    font-family: "Purista_Bold", sans-serif;
+    font-size: 8rem;
+    color: $text-white;
+}
+
+.single-titulo h3 { color: $text-white; transition: all 0.2s ease; -webkit-transition: all 0.2s ease; -moz-transition: all 0.2s ease; -ms-transition: all 0.2s ease; -o-transition: all 0.2s ease;
+}
+
+.single-titulo h3:hover { color: #00304a; transition: all 0.2s ease; -webkit-transition: all 0.2s ease; -moz-transition: all 0.2s ease; -ms-transition: all 0.2s ease; -o-transition: all 0.2s ease;
+}
+
+.single-titulo span {
+    font-family: "Purista_Bold", sans-serif;
+    font-size: 8rem;
+    color: $color-primary;
+}
+
+/*Fin single*/
+
+.blog-text-inicio {
+    margin-top: 10rem;
+}
+
+.blog-text-inicio p {
+    font-family: "Purista", sans-serif;
+    font-size: 2rem;
+    color: $text-black;
+}
+
+.blog-text h3 {
+    font-size: 2.5rem;
+}
+
+.blog-text h4 {
+    font-size: 1.8rem;
+}
+
+.blog-text h3 a { text-decoration: none; color: $text-black; transition: all 0.3s ease; -webkit-transition: all 0.3s ease; -moz-transition: all 0.3s ease; -ms-transition: all 0.3s ease; -o-transition: all 0.3s ease;
+}
+
+.blog-text h3 a:hover { color: $color-secondary; transition: all 0.3s ease; -webkit-transition: all 0.3s ease; -moz-transition: all 0.3s ease; -ms-transition: all 0.3s ease; -o-transition: all 0.3s ease;
+}
+
+.blog-text p {
+    font-family: "Purista", sans-serif;
+    font-size: 1.4rem;
+    color: $text-black;
+}
+
+.blog-text > p > a { font-family: "Purista", sans-serif; font-size: 1.6rem; text-decoration: none; color: $color-primary; transition: all 300ms; -webkit-transition: all 300ms; -moz-transition: all 300ms; -ms-transition: all 300ms; -o-transition: all 300ms;
+}
+
+.blog-text > p > a:hover {
+    color: $color-secondary;
+}
+
+.blog-text > p > a > span { font-family: "webSymbols", sans-serif; font-size: 1.8rem; text-decoration: none; color: $text-black; transition: all 300ms; -webkit-transition: all 300ms; -moz-transition: all 300ms; -ms-transition: all 300ms; -o-transition: all 300ms;
+}
+
+.side-etiqueta > p > span {
+    font-family: "webSymbols";
+    font-size: 1.2rem;
+    color: $color-secondary;
+}
+
+.side-etiqueta > p:hover > span {
+    color: $color-primary;
+    animation-name: movimiento;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes movimiento {
+0% {
+    margin-right: 0px;
+}
+50% {
+    margin-right: 10px;
+}
+100% {
+    margin-right: 0px;
+}
+}
+
+.blog-text ul li a {
+    display: block;
+    font-family: "Purista_light", sans-serif;
+    font-size: 1.8rem;
+    color: rgb(2, 51, 24);
+}
+
+.blog-text button { background-color: $color-secondary; border-radius: .1rem !important; -webkit-border-radius: .1rem !important; -moz-border-radius: .1rem !important; -ms-border-radius: .1rem !important; -o-border-radius: .1rem !important;}
+
+.blog-text button a {
+    display: block;
+    font-family: "Purista_light", sans-serif;
+    text-decoration: none;
+    color: $text-white;
+}
+
+.blog-text button:hover {
+    background-color: $color-secondary;
+}
+
+.blog-text button a:hover {
+    font-family: "Purista_light", sans-serif;
+    text-decoration: none;
+    color: $text-black;
+}
+
+.blog-text-dos {
+    margin-top: 1rem;
+}
+
+.blog-text-dos p {
+    font-family: "Purista", sans-serif;
+    font-size: 2rem;
+    color: $text-black;
+}
+
+.efectoglow {
+    overflow-x: hidden;
+}
+.efectoglow p {
+    overflow-x: hidden;
+}
+
+/*Sub-noticias*/
+
+.sub-noticias h3 a {
+    font-size: 2rem;
+}
+
+.sub-noticias h3 a {
+    font-size: 2rem;
+}
+
+.sub-noticias .date-sub {
+    font-family: "Purista_light", sans-serif;
+    margin-top: -2rem;
+}
+
+/*Noticias relacionadas*/
+
+.not-rel > h2 {
+    font-family: "Purista", sans-serif;
+    font-size: 2rem;
+}
+
+.not-rel > a {
+    text-decoration: none;
+}
+
+.not-rel > a > h4 {
+    padding-top: .5rem;
+    color: $text-black;
+    font-family: "Purista_Bold", sans-serif;
+    font-size: 1.6rem;
+}
+
+.not-rel > p {
+    margin-top: -.5rem;
+    font-family: "Purista", sans-serif;
+    font-size: 1.2rem;
+}
+
+.not-rel > .date-not {
+    margin-top: -.9rem;
+    font-family: "Purista_light", sans-serif;
+    font-size: 1.4rem;
+}
+
+/*Category*/
+.not-rel > span { position: absolute; background-color: red; font-family: "Purista_light", sans-serif; color: $text-white; text-align: center; font-size: 1.8rem; padding: .3rem; padding-right: 1rem; padding-left: 1.5rem; padding-top: .1rem; border-radius: .1rem .1rem .3rem .1rem; -webkit-border-radius: .1rem .1rem .3rem .1rem; -moz-border-radius: .1rem .1rem .3rem .1rem; -ms-border-radius: .1rem .1rem .3rem .1rem; -o-border-radius: .1rem .1rem .3rem .1rem;}
+
+/*SIDEBAR*/
+
+/* fin Noticias relacionadas*/
+
+/*<-------------------end BLOG------------------------>*/
+
+/*<-------------------UNIDAD------------------------>*/
+
+.Fondo-portadaUnidad {
+    /* Set a specific height */
+    /* Create the parallax scrolling effect */
+    background-image: url("../img/unit.jpg");
+    height: 50vh;
+    width: 100vw;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.color-portadaUnidad {
+    background-color: $color-secondary;
+}
+
+.color-portadaUnidad-white {
+    background-color: $color-background-white;
+}
+
+.unidad-titulo {
+    padding-top: 30rem;
+    padding-left: 30rem;
+}
+
+.padin-unidTitulo-left {
+    padding-left: 10rem;
+}
+
+.unidad-titulo h2 {
+    font-family: "Purista_Bold", sans-serif;
+    font-size: 7rem;
+    color: $color-primary;
+}
+
+.unidad-titulo span {
+    font-family: "Purista_Bold", sans-serif;
+    font-size: 7rem;
+    color: $color-primary;
+}
+
+.text-unidad h2,
+h3,
+h4,
+h5 {
+    font-family: "Purista_Bold", sans-serif;
+}
+
+.text-unidad-card h2 {
+    font-family: "Purista_Bold", sans-serif;
+    font-size: 7rem;
+    text-transform: uppercase;
+}
+
+.text-unidad p {
+    font-family: "Purista", sans-serif;
+}
+
+.text-unidad h3 {
+    font-size: 5rem;
+    text-transform: uppercase;
+    color: $color-primary;
+}
+
+.text-unidad h4 {
+    font-size: 2rem;
+}
+
+.text-unidad h4 a { text-decoration: none; color: $color-primary; transition: all 0.3s ease; -webkit-transition: all 0.3s ease; -moz-transition: all 0.3s ease; -ms-transition: all 0.3s ease; -o-transition: all 0.3s ease;
+}
+
+.text-unidad h4 a:hover { color: $text-white; transition: all 0.3s ease; -webkit-transition: all 0.3s ease; -moz-transition: all 0.3s ease; -ms-transition: all 0.3s ease; -o-transition: all 0.3s ease;
+}
+
+.text-unidad h5 {
+    text-transform: uppercase;
+    color: $color-secondary;
+}
+
+#condecor {
+    background: $color-secondary;
+    background: linear-gradient(
+    103deg,
+    rgba(255, 218, 0, 0) 7%,
+    rgba($color-secondary, 1) 34%,
+    rgba($color-primary, 1) 94%
+    );
+    position: absolute;
+    width: 40.34rem;
+    height: 10.34rem;
+    /* border: 1px solid blue; */
+    top: 1.6rem;
+    left: 30.25rem;
+    text-align: right;
+}
+
+#condecor img {
+    right: auto;
+    width: 20%;
+    padding-left: 0;
+    margin-right: .3rem;
+    margin-top: .7rem;
+    /*margin-left: -47px;*/
+}
+
+/*<-------------------END UNIDAD------------------------>*/
+
+/*<-------------------404------------------------>*/
+
+.text-404 h2 {
+    font-family: "Purista_Bold", sans-serif;
+    text-transform: uppercase;
+    font-size: 20.10rem;
+    line-height: 0.6 !important;
+}
+
+.text-404 h3 {
+    font-family: "Purista_Bold", sans-serif;
+    text-transform: uppercase;
+    font-size: 4rem;
+}
+
+.text-404 p {
+    font-family: "Purista_light", sans-serif;
+    text-transform: uppercase;
+    font-size: 4rem;
+    line-height: 2.1;
+}
+
+.text-404 .btn { font-family: "Purista", sans-serif; text-transform: uppercase; padding: 2rem 4rem; border-radius: .1rem !important; -webkit-border-radius: .1rem !important; -moz-border-radius: .1rem !important; -ms-border-radius: .1rem !important; -o-border-radius: .1rem !important;
+}
+
+/*<-------------------END 404------------------------>*/
+
+/*<------------------- EVENTOS ---------------------->*/
+
+.event-rel > span {
+    position: absolute;
+    display: block;
+    font-size: 2rem;
+    text-align: right;
+    color: $text-white;
+    margin-left: .8rem;
+    margin: .5rem;
+    padding: .4rem;
+    padding-left: .5rem;
+    padding-right: .5rem;
+    background-color: rgba($color-secondary, 0.9);
+}
+
+.event-rel > a {
+    display: block;
+    z-index: 999;
+}
+
+.event-rel > a > h4 { position: absolute; top: 0; padding: 2rem; margin: 6.6rem 9.5rem; color: $text-white; transition: all 300ms; -webkit-transition: all 300ms; -moz-transition: all 300ms; -ms-transition: all 300ms; -o-transition: all 300ms;
+}
+
+.event-rel > a > p { position: absolute; top: 0; margin: 10.13rem 10.57rem; color: $text-white; transition: all 300ms; -webkit-transition: all 300ms; -moz-transition: all 300ms; -ms-transition: all 300ms; -o-transition: all 300ms;
+}
+
+.event-rel > a > div > p { position: absolute; top: 0; text-align: center; color: $text-white; margin-top: 10.31rem; margin-left: 3.1rem; margin-right: 10rem; padding: .5rem .7rem; transition: all 300ms; z-index: 0; -webkit-transition: all 300ms; -moz-transition: all 300ms; -ms-transition: all 300ms; -o-transition: all 300ms;
+}
+
+.event-rel > a:hover > h4 {
+    animation-name: titleMove;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+}
+
+.event-rel > a:hover > p {
+    animation-name: littleMove;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+}
+
+.event-rel > a:hover > div > p {
+    color: $text-white;
+}
+
+@keyframes titleMove {
+    0% {
+        margin-top: 6.6rem;
+    }
+    50% {
+        margin-top: 6.1rem;
+    }
+    100% {
+        margin-top: 6.6rem;
+    }
+}
+
+@keyframes littleMove {
+    0% {
+        margin-top: 10.9rem;
+    }
+    50% {
+        margin-top: 10rem;
+    }
+    100% {
+        margin-top: 10.9rem;
+    }
+}
+
+/*--------MEDIA QUERIES------------*/
+
+@media screen and (max-width: 1549px) {
+    /*Nosotros */
+    .nosotros h2 {
+        font-size: 3.2rem;
+    }
+    .nosotros h3 {
+        font-size: 1.9rem;
+    }
+    .nosotros p,
+    span {
+        font-size: 1.2rem;
+    }
+    .nosotros img {
+        height: 10.58rem;
+        width: 10.7rem;
+    }
+
+    /*Unidad*/
+    #condecor {
+        position: absolute;
+        width: 30.8rem;
+        height: 10.34rem;
+        /* border: 1px solid blue; */
+        left: 20.6rem;
+    }
+
+    #condecor img {
+        width: 15%;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .nosotros h2 {
+        font-size: 2.2rem;
+    }
+    .nosotros h3 {
+        font-size: 1.5rem;
+    }
+    .nosotros p,
+    span {
+        font-size: 1rem;
+    }
+    .nosotros img {
+        height: 10.28;
+        width: 10.4rem;
+    }
+    .colorFondo-Dos {
+        height: 150vh;
+    }
+    .p-TituloCuatro h2 {
+        font-size: 4.2rem;
+    }
+    .p-TituloCuatro p {
+        font-size: 2rem;
+    }
+
+    .t-events h2 {
+        font-family: "Purista_Bold", sans-serif, cursive;
+        font-size: 3.2rem;
+        color: $text-white;
+    }
+
+    .t-events p {
+        font-family: "Purista", sans-serif, cursive;
+        font-size: 1.1rem;
+        color: $text-white;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .menu_bar span {
+        float: right;
+        font-size: 4rem;
+    }
+
+    header nav ul li {
+        display: block;
+        border-bottom: 1px solid rgba($color-background-white, 0.5);
+    }
+
+    header nav ul li a {
+        display: block;
+    }
+
+    header nav ul li:hover .children {
+        display: none;
+    }
+
+    header nav ul li .children {
+        width: 100%;
+        position: relative;
+    }
+
+    header nav ul li .children li a {
+        margin-left: 2rem;
+    }
+
+    header nav ul li .caret {
+        float: right;
+    }
+
+    .my-menu-scroll {
+        background-color: rgba($color-primary, 0.7);
+        transition: all 0.5s ease-in;
+        -webkit-transition: all 0.5s ease-in;
+        -moz-transition: all 0.5s ease-in;
+        -ms-transition: all 0.5s ease-in;
+        -o-transition: all 0.5s ease-in;
+}
+
+    .rank-military > img {
+        width: 20%;
+    }
+
+    .unidad-titulo {
+        padding-top: 30rem;
+        padding-left: 10.4rem;
+    }
+
+    .text-unidad-card h2 {
+        font-size: 6rem;
+    }
+
+    .condecor-mobile {
+        padding: 1.5rem;
+    }
+    .condecor-mobile img {
+        width: 15%;
+        padding: .3rem;
+    }
+
+    /*Single news*/
+    .single-titulo > h2 {
+        font-size: 5rem;
+        margin-right: 4rem;
+    }
+
+    .single-titulo > h2 span {
+        font-size: 5rem;
+    }
+}
+
+@media screen and (max-width: 414px) {
+    
+    .nosotros-titulo h2 {
+        font-family: "Purista_Bold", sans-serif;
+        font-size: 5rem;
+        color: $text-white;
+    }
+
+    .nosotros-titulo span {
+        font-family: "Purista_Bold", sans-serif;
+        font-size: 5rem;
+        color: $color-primary;
+    }
+
+    .nosotros-text p {
+        font-family: "Purista", sans-serif;
+        font-size: 1.5rem;
+        color: $text-black;
+    }
+
+    .nosotros-text-dos p {
+        font-family: "Purista", sans-serif;
+        font-size: 1.5rem;
+        color: $text-black;
+    }
+
+    .nosotros-historia h3 {
+        font-family: "Purista_Bold", sans-serif;
+        font-size: 5rem;
+        margin-top: -2rem;
+    }
+
+    .nosotros-historia h4 {
+        font-family: "Purista", sans-serif;
+        font-size: 1.2rem;
+    }
+
+    .miembros-titulo {
+        padding-top: 20rem;
+    }
+
+    .miembros-titulo h2 {
+        font-size: 6rem;
+    }
+
+    .miembros-titulo span {
+        font-size: 6rem;
+    }
+
+    .miembros-text h2 {
+        font-size: 3rem;
+    }
+
+    .text-unidad-card h2 {
+        font-size: 4rem;
+    }
+
+    .unidad-titulo {
+        padding-top: 10.8rem;
+        padding-left: 1.6rem;
+    }
+
+    /*Single News*/
+    .single-titulo > h2 {
+        font-size: 4rem;
+        margin-top: -60%;
+    }
+
+    .single-titulo > h2 span {
+        font-size: 4rem;
+    }
+
+    /*404*/
+    .text-404 h2 {
+        font-family: "Purista_Bold", sans-serif;
+        text-transform: uppercase;
+        font-size: 10.10rem;
+        line-height: 0.6 !important;
+    }
+
+    .text-404 h3 {
+        font-family: "Purista_Bold", sans-serif;
+        text-transform: uppercase;
+        font-size: 2rem;
+    }
+
+    .text-404 p {
+        font-family: "Purista_light", sans-serif;
+        text-transform: uppercase;
+        font-size: 2rem;
+        line-height: 2.1;
+    }
+
+    .text-404 .btn {
+        font-family: "Purista", sans-serif;
+        text-transform: uppercase;
+        padding: 1rem 2rem;
+        border-radius: .1rem !important;
+        -webkit-border-radius: .1rem !important;
+        -moz-border-radius: .1rem !important;
+        -ms-border-radius: .1rem !important;
+        -o-border-radius: .1rem !important;
+}
+}
+
+@media screen and (max-width: 414px) {
+    /*Single News*/
+    .single-titulo > h2 {
+        font-size: 4rem;
+        margin-top: -5%;
+    }
+}
+
+@media screen and (max-width: 411px) {
+    
+    .separador {
+        margin-left: .5rem;
+    }
+    .p-TituloCuatro h2 {
+        font-size: 3.2rem;
+    }
+    .p-TituloCuatro p {
+        font-size: 1rem;
+    }
+
+    .t-events h2 {
+        font-family: "Purista_Bold", sans-serif, cursive;
+        font-size: 3.2rem;
+        color: $text-white;
+    }
+
+    .t-events p {
+        font-family: "Purista", sans-serif, cursive;
+        font-size: 1.1rem;
+        color: $text-white;
+    }
+
+    .nosotros-titulo h2 {
+        font-family: "Purista_Bold", sans-serif;
+        font-size: 5rem;
+        color: $text-white;
+    }
+
+    .nosotros-titulo span {
+        font-family: "Purista_Bold", sans-serif;
+        font-size: 5rem;
+        color: $color-primary;
+    }
+
+    .nosotros-text p {
+        font-family: "Purista", sans-serif;
+        font-size: 1.5rem;
+        color: $text-black;
+    }
+
+    .nosotros-text-dos p {
+        font-family: "Purista", sans-serif;
+        font-size: 1.5rem;
+        color: $text-black;
+    }
+
+    .nosotros-historia h3 {
+        font-family: "Purista_Bold", sans-serif;
+        font-size: 5rem;
+        margin-top: -2rem;
+    }
+
+    .nosotros-historia h4 {
+        font-family: "Purista", sans-serif;
+        font-size: 1.2rem;
+    }
+
+    .blog-titulo {
+        padding-top: 20rem;
+    }
+
+    .single-titulo {
+        padding-top: 20rem;
+    }
+
+    .Fondo-portadaSingle {
+        height: 50vh;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .miembros-titulo {
+        padding-top: 10.8rem;
+    }
+
+    .text-unidad-card h2 {
+        font-size: 4rem;
+    }
+
+    .unidad-titulo {
+        padding-top: 20rem;
+        padding-left: 4rem;
+    }
+
+    /*Single News */
+    /*Single News*/
+    .single-titulo > h2 {
+        font-size: 4rem;
+        margin-top: -60%;
+    }
+
+    .text-404 h2 {
+        font-family: "Purista_Bold", sans-serif;
+        text-transform: uppercase;
+        font-size: 10.1rem;
+        line-height: 0.6 !important;
+    }
+
+    .text-404 h3 {
+        font-family: "Purista_Bold", sans-serif;
+        text-transform: uppercase;
+        font-size: 2rem;
+    }
+
+    .text-404 p {
+        font-family: "Purista_light", sans-serif;
+        text-transform: uppercase;
+        font-size: 2rem;
+        line-height: 2.1;
+    }
+
+    .text-404 .btn {
+        font-family: "Purista", sans-serif;
+        text-transform: uppercase;
+        padding: 1rem 2rem;
+        border-radius: .1rem !important;
+        -webkit-border-radius: .1rem !important;
+        -moz-border-radius: .1rem !important;
+        -ms-border-radius: .1rem !important;
+        -o-border-radius: .1rem !important;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .t-events h2 {
+        font-family: "Purista_Bold", sans-serif, cursive;
+        font-size: 2.5em;
+        color: $text-white;
+    }
+
+    .t-events p {
+        font-family: "Purista", sans-serif, cursive;
+        font-size: 1.1rem;
+        color: $text-white;
+    }
+    .color-fondo {
+        background-color: $color-primary !important;
+    }
+
+    .my-menu {
+        background-color: rgba($color-primary, 0.7);
+        transition: all 0.5s ease-in;
+        -webkit-transition: all 0.5s ease-in;
+        -moz-transition: all 0.5s ease-in;
+        -ms-transition: all 0.5s ease-in;
+        -o-transition: all 0.5s ease-in;
+}
+
+    .my-menu-scroll {
+        background-color: rgba($color-secondary, 0.7);
+        transition: all 0.5s ease-in;
+        -webkit-transition: all 0.5s ease-in;
+        -moz-transition: all 0.5s ease-in;
+        -ms-transition: all 0.5s ease-in;
+        -o-transition: all 0.5s ease-in;
+}
+
+    /*NOSOTROS*/
+    .nosotros-titulo h2 {
+        font-family: "Purista_Bold", sans-serif;
+        font-size: 5rem;
+        color: $text-white;
+    }
+
+    .nosotros-titulo span {
+        font-family: "Purista_Bold", sans-serif;
+        font-size: 5rem;
+        color: $color-primary;
+    }
+
+    .nosotros-text p {
+        font-family: "Purista", sans-serif;
+        font-size: 1.5rem;
+        color: $text-black;
+    }
+
+    .nosotros-text-dos p {
+        font-family: "Purista", sans-serif;
+        font-size: 1.5rem;
+        color: $text-black;
+    }
+
+    .nosotros-historia h3 {
+        font-family: "Purista_Bold", sans-serif;
+        font-size: 5rem;
+        margin-top: -2rem;
+    }
+
+    .nosotros-historia h4 {
+        font-family: "Purista", sans-serif;
+        font-size: 1.2rem;
+    }
+
+    /*UNIDAD*/
+    .unidad-titulo {
+        padding-top: 10.8rem;
+        padding-left: 1.6rem;
+    }
+
+    .padin-unidTitulo-left {
+        padding-left: 2rem;
+    }
+
+    .unidad-titulo h2 {
+        font-size: 6rem;
+    }
+
+    .unidad-titulo span {
+        font-size: 6rem;
+    }
+
+    .text-unidad-card h2 {
+        font-size: 3rem;
+    }
+
+    .condecor-mobile img {
+        width: 20%;
+    }
+
+    /*Single News*/
+
+    .single-titulo > h2 {
+        font-size: 4rem;
+        margin-top: -60%;
+    }
+
+    /*404*/
+
+    .text-404 h2 {
+        font-family: "Purista_Bold", sans-serif;
+        text-transform: uppercase;
+        font-size: 10.1rem;
+        line-height: 0.6 !important;
+    }
+
+    .text-404 h3 {
+        font-family: "Purista_Bold", sans-serif;
+        text-transform: uppercase;
+        font-size: 2rem;
+    }
+
+    .text-404 p {
+        font-family: "Purista_light", sans-serif;
+        text-transform: uppercase;
+        font-size: 2rem;
+        line-height: 2.1;
+    }
+
+    .text-404 .btn {
+        font-family: "Purista", sans-serif;
+        text-transform: uppercase;
+        padding: 1rem 2rem;
+        border-radius: .1rem !important;
+        -webkit-border-radius: .1rem !important;
+        -moz-border-radius: .1rem !important;
+        -ms-border-radius: .1rem !important;
+        -o-border-radius: .1rem !important;
+    }
+}
+
+@media screen and (max-width: 280px) {
+    /*Single News*/
+    .single-titulo > h2 {
+        font-size: 3rem;
+        margin-top: -80%;
+    }
+
+    .single-titulo > h2 span {
+        font-size: 3rem;
+        margin-top: -80%;
+    }
+}
