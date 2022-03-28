@@ -23,359 +23,57 @@
     </head>
 
     <body>
-        <div class="container-fluid efectoglow">   
-            <!--NAVEGADOR CABECERA-->
-            <header id="my-menuEffect" class="row my-menu pb-3">
-                <div class="col-12 col-xl-5 text-center text-xl-start pt-3 pb-4 pb-lg-1 pl-xl-5 animated fadeInLeft delay-2s">
-                    <a href="index.html">
-                        <img class="img-fluid" src="img/logo.png" width="98" height="98" alt="Logo">
-                    </a>
-                </div>
-                <div class="col-12 col-xl-7 my-col">
-                    <nav class="navbar-expand-md navbar-light bg-faded pt-ms-2 pb-ms-2 pb-3 pt-3 pb-md-0 pt-md-0">
-                        <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target="#collapsingNavbar4">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
-                        <a href="#" class="navbar-brand d-none">ArgA Clan</a>
-                        <div class="container-fluid">
-                            <div class="collapse navbar-collapse w-100 menu-encabezado" id="collapsingNavbar4">
-                                <ul class="nav nav-justified flex-column w-100 pt-3 flex-md-row">
-                                    <li class="nav-item"><a href="#" class="nav-link active">Inicio</a></li>
-                                    <li class="nav-item submenu">
-                                        <a href="#" class="nav-link">Nosotros</a>
-                                            <ul class="children">
-                                                <li class="nav-item"><a href="nosotros.html" class="nav-link">Historia ArgA</a></li>
-                                                <li class="nav-item"><a href="miembros.html" class="nav-link">Miembros ArgA</a></li>
-                                                <li class="nav-item"><a href="404.html" class="nav-link">404</a></li>
-                                                <li class="nav-item"><a href="#" class="nav-link disabled">Comunidad Amiga</a></li>
-                                            </ul>
-                                    </li>
-                                    <li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li>
-                                    <li class="nav-item"><a href="events.html" class="nav-link">Eventos</a></li>
-                                    <li class="nav-item"><a href="#" class="nav-link disabled">Galería</a></li>
-                                    <li class="nav-item"><a href="https://foro.clanarga.com.ar" class="nav-link">Foro</a></li>
-                                </ul>
-                            </div><!--.collapse-->
-                        </div><!--.container-fluid-->
-                    </nav>
+        <!--NAVEGADOR CABECERA-->
+            <header class="header-box clearfix">
+                    <div class="heading--logo">
+                        <a href="index.html">
+                            <img class="img-fluid" src="img/logo.png" width="98" height="98" alt="Logo">
+                        </a>
+                    </div>
+                    <div class="heading--menu">
+                        <nav>
+                            <ul>
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">Nosotros</a></li>
+                                <li><a href="#">Eventos</a></li>
+                                <li><a href="#">Noticias</a></li>
+                                <li><a href="#">Miembros</a></li>
+                               
+                            </ul>
+                            <ul>
+                                <li><a href="#">Registrate</a></li>
+                            </ul>
+                        </nav>
+                    </div>
                 </div>
             </header>
-        </div>
-        <!--SLIDE-->
-        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-indicators">
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-            </div>
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="img/fondo.jpeg" class="d-block w-100" alt="...">
-              </div>
-              <div class="carousel-item">
-                <img src="img/fondoDos.png" class="d-block w-100" alt="...">
-              </div>
-              <div class="carousel-item">
-                <img src="img/fondoTres.png" class="d-block w-100" alt="...">
-              </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
-          </div>
-        <div class="bg-contenido d-md-block d-lg-none">
-            <img src="img/fondo.jpeg" class="img-fluid" alt="...">
-        </div>
-           
-        <!--CUERPO-->
-        <div class="container-fluid">
-            <!--SEGUNDA SECCION NOSOTROS-->
-            <section class="row">
-                <div class="col-12 colorFondo-Dos columna"> <!--COLUMNA DOS-->
-                    <div class="row">
-                        <div class="container">
-                            <div class="col-12"> <!--INTERMEDIA DE LA COLUMNA DOS-->
-                                <div class="row justify-content-center cotejo">
-                                    <div class="col-sm-12 col-md-5 col-lg-5 col-xl-3 text-center nosotros-font-text columna caja1"><!--Bloque Uno-->
-                                        <img src="img/icon1.png" height="80" width="100" alt="">
-                                        <h3 class="text-uppercase">Inicio Numero Uno</h3> 
-                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus reiciendis nulla suscipit tempora blanditiis minus quisquam, nisi beatae illo necessitatibus?.</p>
-                                        <a class="text-uppercase" href="#">Leer más...</a>
-                                    </div>
-                                    <div class="col-sm-12 col-md-5 col-lg-5 col-xl-3 text-center nosotros-font-text columna caja1"><!--Bloque Dos-->
-                                        <img src="img/icon1.png" height="80" width="100" alt="">
-                                        <h3 class="text-uppercase">Inicio Numero dos</h3>
-                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus reiciendis nulla suscipit tempora blanditiis minus quisquam, nisi beatae illo necessitatibus?.</p>
-                                        <a class="text-uppercase" href="#">Leer más...</a>
-                                    </div>
-                                    <div class="col-sm-12 col-md-8 col-lg-8 col-xl-3 text-center nosotros-font-text columna caja1"><!--Bloque Tres-->
-                                        <img src="img/icon1.png" height="80" width="100" alt="">
-                                        <h3 class="text-uppercase">Inicio Numero tres</h3>
-                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus reiciendis nulla suscipit tempora blanditiis minus quisquam, nisi beatae illo necessitatibus?.</p>
-                                        <a class="text-uppercase" href="#">Leer más...</a>
-                                    </div>   
-                                </div>
-                            </div>
-                        </div>
-                        <div class="w-100"></div>
-                        <div class=" col-12 col-lg-2 text-center text-lg-start align-self-lg-center offset-lg-3 pb-2 pb-lg-0 nosotros efectoglow">
-                            <img data-aos="zoom-in" data-aos-delay="300" data-aos-anchor-placement="top-center" src="img/LOGOaRGA.png" alt="Logo">
-                        </div>
-                        <div data-aos="fade-right" data-aos-delay="400" data-aos-anchor-placement="top-center" class="col-12 text-center text-lg-left col-lg-6 nosotros"> <!--CONTINUACION SECCION DOS-->
-                            <h2 class="text-uppercase">Clan Arga</h2>
-                            <h3>Unete a Nuestra Gran Comunidad</h3>
-                            <br>
-                            <p>Clan ArgA situa su origen a finales de Octubre del año 2011.</p>
-                            <p>
-                                Sus tres miembros fundadores: ZePp, Reo y Kosteleta comenzaron a interactuar y efectuar publicaciones en foros y sitios de encuentro de jugadores con la intencion de crear una comunidad que jugara de una forma mas ordenada y seria.
-                            </p>
-                        </div>
-                        <div class="w-100 mb-3">
-                        </div>
-                        <div class="col offset-0 offset-lg-5 text-center text-lg-left pb-5 nosotros-prim espacio-Secciones">
-                            <p data-aos="zoom-in-down" data-aos-delay="100">
-                                <a href="nosotros.html" class="btn btn-outline-primary texto-btn">Seguir Leyendo...</a> <span class="separador text-uppercase">ó</span>
-                                <a href="#" class="separador"><img src="img/Icon-facebook.png" alt="facebook"></a>
-                                <a href="#" class="separador"><img src="img/Icon-twitter.png" alt="twitter"></a>
-                                <a href="#" class="separador"><img src="img/Icon-youtube.png" alt="youtube"></a>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <!--TERCERA SECCION EVENTOS-->
-            <section>
-                <div class="row zoneout">
-                    <div class="col-12 colorFondo-Tres columna"> <!--COLUMNA TRES-->
-                        <div class="container">
-                            <div class="row justify-content-around ">
-                                <div data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-delay="200" class="col-12 t-events mt-5 pt-5 pb-5 mb-5 text-center">
-                                    <h2 class="text-uppercase">Eventos Actuales</h2>
-                                    <p>Presentación Eventos Proximos</p>
-                                </div>
-                                <div data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-delay="200" class="col-md-6 col-lg-4 pb-3">
-                                    <div class="card ">
-                                        <img class="card-img-top img-fluid" src="img/guard1.jpg" alt="presentacion">
-                                        <div class="card-body textos-event-card">
-                                            <h5 class="card-text">13 Enero 2019</h5>
-                                            <h3 class="card-title text-uppercase">Esto es un Evento 1</h3>
-                                            <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe perspiciatis dolores, rem voluptates quod ipsam explicabo sunt quis deleniti quia.</p>
-                                            <a class="btn btn-primary texto-btn" href="#">Ver más...</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-delay="200" class="col-md-6 col-lg-4 pb-3">
-                                    <div class="card">
-                                        <img class="card-img-top img-fluid" src="img/guard1.jpg" alt="presentacion">
-                                        <div class="card-body textos-event-card">
-                                            <h5>13 Enero 2019</h5>
-                                            <h3 class="card-title text-uppercase">Esto es un Evento 2</h3>
-                                            <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe perspiciatis dolores, rem voluptates quod ipsam explicabo sunt quis deleniti quia.</p>
-                                            <a class="btn btn-primary texto-btn" href="#">Ver más...</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-delay="200" class="col-md-12 col-lg-4 pb-3">
-                                    <div class="card">
-                                        <img class="card-img-top img-fluid" src="img/guard1.jpg" alt="presentacion">
-                                        <div class="card-body textos-event-card">
-                                            <h5>13 Enero 2019</h5>
-                                            <h3 class="card-title text-uppercase">Esto Es un evento 3</h3>
-                                            <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe perspiciatis dolores, rem voluptates quod ipsam explicabo sunt quis deleniti quia.</p>
-                                            <a class="btn btn-primary texto-btn" href="#">Ver más...</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="w-100"></div> <!--DIVISOR-->
-                                <div data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-delay="200" class="col-md-6 col-lg-4 mb-lg-5 pb-3">
-                                    <div class="card">
-                                        <img class="card-img-top img-fluid" src="img/guard1.jpg" alt="presentacion">
-                                        <div class="card-body textos-event-card">
-                                            <h5>13 Enero 2019</h5>
-                                            <h3 class="card-title text-uppercase">Esto es un evento 4</h3>
-                                            <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe perspiciatis dolores, rem voluptates quod ipsam explicabo sunt quis deleniti quia.</p>
-                                            <a class="btn btn-primary texto-btn" href="#">Ver más...</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-delay="200" class="col-md-6 col-lg-4 mb-lg-5 pb-3">
-                                    <div class="card">
-                                        <img class="card-img-top img-fluid" src="img/guard1.jpg" alt="presentacion">
-                                        <div class="card-body textos-event-card">
-                                            <h5>13 Enero 2019</h5>
-                                            <h3 class="card-title text-uppercase">Esto es un evento 5</h3>
-                                            <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe perspiciatis dolores, rem voluptates quod ipsam explicabo sunt quis deleniti quia.</p>
-                                            <a class="btn btn-primary texto-btn" href="#">Ver más...</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-delay="200" class="col-md-12 col-lg-4 mb-5 mb-sm-5 mb-md-5 mb-lg-5">
-                                    <div class="card">
-                                        <img class="card-img-top img-fluid" src="img/guard1.jpg" alt="presentacion">
-                                        <div class="card-body textos-event-card">
-                                            <h5>13 Enero 2019</h5>
-                                            <h3 class="card-title text-uppercase">Esto es un evento 6</h3>
-                                            <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe perspiciatis dolores, rem voluptates quod ipsam explicabo sunt quis deleniti quia.</p>
-                                            <a class="btn btn-primary texto-btn" href="#">Ver más...</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <!--CUARTA SECCION NOTICIAS-->
-            <section>
-                <div class="row zoneout">
-                    <div class="col-12 colorFondo-Cuatro">
-                        <div class="container">
-                            <div class="row justify-content-around ">
-                                <div data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-delay="200" class="col-12 t-events mt-5 pt-5 pb-5 mb-5 text-center">
-                                    <h2 class="text-uppercase">Ultimas Noticias</h2>
-                                    <p>Presentación de las Noticias Recientes</p>
-                                </div>
-                                <div data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-delay="200" class="col-md-6 col-lg-4 pb-3">
-                                    <div class="card ">
-                                        <img class="card-img-top img-fluid" src="img/guard1.jpg" alt="presentacion">
-                                        <div class="card-body textos-event-card">
-                                            <h5 class="card-text">13 Enero 2019</h5>
-                                            <h3 class="card-title text-uppercase">Esto es un Evento 1</h3>
-                                            <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe perspiciatis dolores, rem voluptates quod ipsam explicabo sunt quis deleniti quia.</p>
-                                            <a class="btn btn-primary texto-btn" href="blog.html">Ver más...</a>
-                                            <div class="row pt-4 justify-content-start">
-                                                <div class="col admin text-left">
-                                                    <h3 class="">Por: <a href="#"><span class="text-uppercase">admin</span></a></h3></a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-delay="200" class="col-md-6 col-lg-4 pb-3">
-                                    <div class="card">
-                                        <img class="card-img-top img-fluid" src="img/guard1.jpg" alt="presentacion">
-                                        <div class="card-body textos-event-card">
-                                            <h5>13 Enero 2019</h5>
-                                            <h3 class="card-title text-uppercase">Esto es un Evento 2</h3>
-                                            <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe perspiciatis dolores, rem voluptates quod ipsam explicabo sunt quis deleniti quia.</p>
-                                            <a class="btn btn-primary texto-btn" href="blog.html">Ver más...</a>
-                                            <div class="row pt-4 justify-content-start">
-                                                <div class="col admin text-left">
-                                                    <h3 class="">Por: <a href="#"><span class="text-uppercase">admin</span></a></h3></a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-delay="200" class="col-md-12 col-lg-4 pb-3">
-                                    <div class="card">
-                                        <img class="card-img-top img-fluid" src="img/guard1.jpg" alt="presentacion">
-                                        <div class="card-body textos-event-card">
-                                            <h5>13 Enero 2019</h5>
-                                            <h3 class="card-title text-uppercase">Esto Es un evento 3</h3>
-                                            <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe perspiciatis dolores, rem voluptates quod ipsam explicabo sunt quis deleniti quia.</p>
-                                            <a class="btn btn-primary texto-btn" href="blog.html">Ver más...</a>
-                                            <div class="row pt-4 justify-content-start">
-                                                <div class="col admin text-left">
-                                                    <h3 class="">Por: <a href="#"><span class="text-uppercase">admin</span></a></h3></a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="w-100"></div> <!--DIVISOR-->
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <!--QUINTA SECCION DESEMPEÑO-->
-            <section class="row zoneout">
-                <div class="col-12 colorFondo-Cinco pb-5">
-                    <div class="container">
-                        <div class="row justify-content-around ">
-                            <div data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-delay="100" class="col-12 t-events mt-5 pt-5 pb-5 mb-5 text-center">
-                                <h2 class="text-uppercase">Mejores Tres Desempeños del 2019</h2>
-                                <p>Mejores tres unidades que terminaron el año anterior con mejores calificaciones</p>
-                            </div>
-                            <div data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-delay="200" class="col-md-6 col-lg-4 pb-3">
-                                <div class="card">
-                                    <img class="card-img-top img-fluid" src="img/hombre2-completo.png" alt="presentacion">
-                                    <div class="card-body textos-event-card text-center">
-                                        <h3 class="card-title text-uppercase"><a href="unidad.html">Redburn</a></h3>
-                                        <p class="card-text text-uppercase">Soldado</p>
-                                        <img src="img/medalArgA.png" width="121" height="131" alt="img">
-                                    </div>
-                                </div>
-                            </div>
-                            <div data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-delay="200" class="col-md-6 col-lg-4 pb-3">
-                                <div class="card">
-                                    <img class="card-img-top img-fluid" src="img/hombre2-completo.png" alt="presentacion">
-                                    <div class="card-body textos-event-card text-center">
-                                        <h3 class="card-title text-uppercase"><a href="unidad.html">Redburn</a></h3>
-                                        <p class="card-text text-uppercase">Soldado</p>
-                                        <img src="img/medalArgA.png" width="121" height="131" alt="img">
-                                    </div>
-                                </div>
-                            </div>
-                            <div data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-delay="200" class="col-md-6 col-lg-4 pb-3 ">
-                                <div class="card">
-                                    <img class="card-img-top img-fluid" src="img/hombre2-completo.png" alt="presentacion">
-                                    <div class="card-body textos-event-card text-center">
-                                        <h3 class="card-title text-uppercase"><a href="unidad.html">Redburn</a></h3>
-                                        <p class="card-text text-uppercase">Soldado</p>
-                                        <img src="img/medalArgA.png" width="121" height="131" alt="img">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="w-100"></div> <!--DIVISOR-->
-                        </div>
-                    </div>
+            <!-- section of slide -->
+            <section class="slide">
+                <div class="slide-img">
+                    <img src="img/fondo.jpeg" alt="Slide del sitio">
                 </div>
             </section>
 
-            <!--SEXTA SECCION FOOTER-->
-            <section class="row zoneout">
-                <div class="col-12 colorFondo-Seis">
-                    <div class="container">
-                        <div class="row justify-content-between pt-5">
-                            <div class="col-md-3 col-xl-3 pt-3 pb-3 footer-font-text footer-font-text-btn">
-                                <h3>Contactanos</h3>
-                                <p>Puedes Acceder a nuesto Foro para tener mas detalles</p>
-                                <a class="btn btn-outline-warning" href="https://foro.clanarga.com.ar">Detalles...</a>
-                            </div>
-                            <div class="col-md-3 col-xl-3 pt-3 pb-3 footer-font-text">
-                                <img src="img/logo.png" height="45" width="95" alt="logo">
-                                <p class="pt-3">Clan Dedicado a la simulación militar en primera persona contra la IA, no se realizan actividades relacionadas con PVP o TVT.</p>
-                                <p>---------------------------------------------------------</p>
-                                <p>
-                                    <a href="#" class="footer-redes-fb"><img src="img/Icon-facebook.png" alt="facebook"></a>
-                                    <a href="#" class="footer-separador footer-redes-tw"><img src="img/Icon-twitter.png" alt="twitter"></a>
-                                    <a href="#" class="footer-separador footer-redes-yo"><img src="img/Icon-youtube.png" alt="youtube"></a>
-                                </p>
-                            </div>
-                            <div class="col-md-3 col-xl-3 pt-3 pb-3 footer-font-text">
-                                <h3>Noticias Recientes</h3>
-                                <h4>A2 Exitosa para Misión Coop</h4>
-                                <span>01 septiembre, 2019</span>
-                                <p>---------------------------------------------------------</p>
-                                <h4>A2 Exitosa para Misión Coop</h4>
-                                <span>01 septiembre, 2019</span>
-                            </div>
+            <!-- section main demostrative page -->
+            <main class="content--main">
+                <div class="content-about" id="about">
+                    <div class="content-logo">
+                        <img src="img/LOGOaRGA.png" alt="">
+                    </div>
+                    <div class="description-about">
+                        <div class="about-title">
+                            <h2>clan arga</h2>
+                            <p>unete a nuestra gran comunidad</p>
+                        </div>
+                        <div class="about-description">
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus repudiandae veritatis quod odio ex voluptates laudantium consequuntur, dolore repellat alias autem voluptatibus sit minima. Veniam fugit nulla expedita in. Quasi consectetur esse, id sequi culpa voluptatum at rem dicta autem fugiat harum beatae temporibus natus ratione illum, voluptatibus ad laboriosam!</p>
                         </div>
                     </div>
+                    
                 </div>
-            </section>
-            <footer class="row zoneout">
-                <div class="col text-center pt-3  footer-font-text copyright">
-                    <p>&copy; Copiryght Clan ArgA</p>
-                </div>
-            </footer>
+            </main>
+           
+        
         
 
             <!--BOTON SUBIR AL TOP-->
