@@ -1,3 +1,4 @@
+
 # Actalización de Plantilla web ArgA
 
 ![template](https://img.shields.io/badge/Status-Woking-red.svg)
@@ -28,5 +29,3 @@ Se desarrolla para la parte del Front-End una nueva y mejorada Plantilla Arga, c
 ## - Muestra de la página
 
 Página en estado de desarrollo, muestra del ejemplo actual: [`Plantilla`](https://mirlino.github.io/ArgA2020/)
-
-
