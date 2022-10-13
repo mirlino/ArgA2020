@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="author" content="Mirlino Marine" />
+        <meta name="description" content="Web comunidad de simulación militar" />
+        <meta name="keywords" content="ARMA, Arma 3, Simulador Militar, Arga clan, clan, Videojuego Militar, Comunidad" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- <meta http-equiv="X-UA-Compatible" content="ie=edge" /> -->
+        <title>Clan ArgA | Web Sample</title>
+        <!--BOOTSTRAP 5.2-->
+        <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css" />
+        <!--BOOTSTRAP-ICONS v1.9.0-->
+        <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.css" />
+        <!--ANIMATE CSS-->
+        <link rel="stylesheet" href="css/animate.css" />
+        <!--AOS CSS-->
+        <link rel="stylesheet" href="node_modules/aos/dist/aos.css" />
+        <!--CUSTOM CSS-->
+        <link rel="stylesheet" href="css/main.css" />
+    </head>
+    <body >
+        <!--NAVEGADOR CABECERA-->
+        <header>
+            <div class="row container-fluid">
+                <nav class="col-12 navbar heading">
+                    <div class="container">
+                        <a class="navbar-brand" href="#">
+                            <img class="logo-primary" src="img/logo.png" alt="logo_ArgA">
+                        </a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDark" aria-controls="offcanvasDarkLabel">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="offcanvas show text-bg-dark offcanvas-end" tabindex="-1" id="offcanvasDark" aria-labelledby="offcanvasNavbarLabel">
+                            <div class="offcanvas-header">
+                            <h5 class="offcanvas-title" id="offcanvasNavbarLabel"><img class="logo-primary__menu" src="img/logo.png" alt="logo_ArgA"></h5>
+                            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                            </div>
+                            <div class="offcanvas-body">
+                            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                                <li class="nav-item">
+                                    <a class="text-nav-item nav-link active" aria-current="page" href="./index.html">Inicio</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                <a class="text-nav-item nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Nosotros
+                                </a>
+                                <ul class="dropdown-menu text-bg-dark">
+                                    <li><a class="text-nav-item dropdown-item" href="./nosotros.html">Historia</a></li>
+                                    <li><a class="text-nav-item dropdown-item" href="./miembros.html">Miembros</a></li>
+                                    <li><a class="text-nav-item dropdown-item" href="./events.html">Eventos</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <!-- <li><a class="text-nav-item dropdown-item disabled" href="#">Algo mas</a></li> -->
+                                </ul>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="text-nav-item nav-link" href="./blog.html">Blog</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="text-nav-item nav-link" href="./404.html">404</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="text-nav-item nav-link" href="#">Foro</a>
+                                </li>
+                            </ul>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </header>
+
+        <!--CONTENIDO-->
+        <section class="row">
+            <div class="col-12 miembros__titulo Fondo-portadaMiembros text-center justify-content-center">
+                <h2 class="text-uppercase animated fadeIn delay-1s"><span>Mi</span>embr<span>os</span></h2>
+            </div>
+            <div class="col-12 color-portadaNosotros">
+                <div class="row">
+                    <div id="reclutamiento"></div> <!--BANNER PENDIENTE-->
+                    <div class="col-12 miembros__text text-center d-flex card-padin-top justify-content-center">
+                        <h2>LISTADO DE PERSONAL DENTRO DEL CLAN</h2>
+                    </div>
+                    <div class="col-12 text-center">
+                        <img src="img/estrellaclass.png" class="img-fluid" alt="">
+                    </div>
+                    <div class="col-12 color-portadaNosotros">
+                        <div class="container pt-5 pb-5">
+                            
+                            <div class="accordion miembros__text" id="accordionPanelsStayOpenExample">
+                                <!-- CAPITAN -->
+                                <div class="accordion-item"> 
+                                    <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                                    <button class="miembros__rank collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="false" aria-controls="panelsStayOpen-collapseOne">
+                                        <img src="img/rankss/captain.jpg" class="img-fluid" alt="rank militar" />
+                                        RANGO CAPITAN 
+                                    </button>
+                                    </h2>
+                                    <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingOne">
+                                    <div class="accordion-body">
+                                        <div class="card-body">
+                                            <!--INICIO CARD-->
+                                            <div class="row justify-content-around"><!--INICIO DE CARDS-->
+                                                <div class="col-md-6 col-lg-4 col-xxl-3 pb-3"><!--INICIO DE SOLDIER-->
+                                                    <div class="card ">
+                                                        <img class="card-img-top img-fluid" src="img/plantillaUno.jpg" alt="presentacion">
+                                                        <div class="card-body textos-event-card">
+                                                            <h3 class="card-title text-center text-uppercase"><a href="unidad.html">BlackBurn</a></h3>
+                                                            <p class="card-text text-center">Infanteria</p>
+                                                            <img src="img/estrellaclass.png" class="img-fluid" height="20" width="800" alt="separador Marcado" />
+                                                            <div class="row pt-4 justify-content-start">
+                                                                <div class="col social-data text-center">
+                                                                    <a class="btn btn-outline-primary" href="./unidad.html">Ver perfil de ejemplo</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6 col-lg-4 col-xxl-3 pb-3"><!--INICIO DE SOLDIER-->
+                                                    <div class="card ">
+                                                        <img class="card-img-top img-fluid" src="img/05-3.jpg" alt="presentacion">
+                                                        <div class="card-body textos-event-card">
+                                                            <h3 class="card-title text-center text-uppercase"><a href="unidad.html">Cero</a></h3>
+                                                            <p class="card-text text-center">Op. Especiales</p>
+                                                            <img src="img/estrellaclass.png" class="img-fluid" height="20" width="800" alt="separador Marcado" />
+                                                            <div class="row pt-4 justify-content-start">
+                                                                <div class="col social-data text-center">
+                                                                    <h3 class="btn btn-outline-primary">Ver perfil</h3>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6 col-lg-4 col-xxl-3 pb-3">
+                                                    <div class="card">
+                                                        <img class="card-img-top img-fluid" src="img/04-3.jpg" alt="presentacion">
+                                                        <div class="card-body textos-event-card">
+                                                            <h3 class="card-title text-center text-uppercase"><a href="">GABY</a></h3>
+                                                            <p class="card-text text-center">Fuerza Aerea</p>
+                                                            <img src="img/estrellaclass.png" class="img-fluid" height="20" width="800" alt="">
+                                                            <div class="row pt-4 justify-content-start">
+                                                                <div class="col social-data text-center">
+                                                                    <h3 class="btn btn-outline-primary">Ver perfil</h3>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6 col-lg-4 col-xxl-3 pb-3">
+                                                    <div class="card">
+                                                        <img class="card-img-top img-fluid" src="img/03-3.jpg" alt="presentacion">
+                                                        <div class="card-body textos-event-card">
+                                                            <h3 class="card-title text-center text-uppercase"><a href="">VIOLET</a></h3>
+                                                            <p class="card-text text-center">Marina de Guerra</p>
+                                                            <img src="img/estrellaclass.png" class="img-fluid" height="20" width="800" alt="">
+                                                            <div class="row pt-4 justify-content-start">
+                                                                <div class="col social-data text-center">
+                                                                    <h3 class="btn btn-outline-primary">Ver perfil</h3>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div><!--FIN CARDS-->
+                                    </div>
+                                    </div>
+                                </div>
+                                <!-- TENIENTE -->
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+                                    <button class="miembros__rank collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                                        <img src="img/rankss/1st-lieutenant-insignia.jpg" class="img-fluid" alt="rank militar" />
+                                        Teniente 
+                                    </button>
+                                    </h2>
+                                    <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
+                                    <div class="accordion-body">
+                                        <div class="card-body">
+                                            <!--INICIO CARD-->
+                                            <div class="row justify-content-around"><!--INICIO DE CARDS-->
+                                                <div class="col-md-6 col-lg-4 col-xxl-3 pb-3">
+                                                    <div class="card ">
+                                                        <img class="card-img-top img-fluid" src="img/plantillaUno.jpg" alt="presentacion">
+                                                        <div class="card-body textos-event-card">
+                                                            <h3 class="card-title text-center text-uppercase"><a href="unidad.html">Redburn</a></h3>
+                                                            <p class="card-text text-center">Soldado</p>
+                                                            <img src="img/estrellaclass.png" class="img-fluid" height="20" width="800" alt="separador Marcado" />
+                                                            <div class="row pt-4 justify-content-start">
+                                                                <div class="col social-data text-center">
+                                                                    <h3 class="btn btn-outline-primary">Ver perfil</h3>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6 col-lg-4 col-xxl-3 pb-3">
+                                                    <div class="card">
+                                                        <img class="card-img-top img-fluid" src="img/04-3.jpg" alt="presentacion">
+                                                        <div class="card-body textos-event-card">
+                                                            <h3 class="card-title text-center text-uppercase"><a href="">GABY</a></h3>
+                                                            <p class="card-text text-center">SOLDADO</p>
+                                                            <img src="img/estrellaclass.png" class="img-fluid" height="20" width="800" alt="">
+                                                            <div class="row pt-4 justify-content-start">
+                                                                <div class="col social-data text-center">
+                                                                    <h3 class="btn btn-outline-primary">Ver perfil</h3>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6 col-lg-4 col-xxl-3 pb-3">
+                                                    <div class="card">
+                                                        <img class="card-img-top img-fluid" src="img/03-3.jpg" alt="presentacion">
+                                                        <div class="card-body textos-event-card">
+                                                            <h3 class="card-title text-center text-uppercase"><a href="">VIOLET</a></h3>
+                                                            <p class="card-text text-center">SOLDADO</p>
+                                                            <img src="img/estrellaclass.png" class="img-fluid" height="20" width="800" alt="">
+                                                            <div class="row pt-4 justify-content-start">
+                                                                <div class="col social-data text-center">
+                                                                    <h3 class="btn btn-outline-primary">Ver perfil</h3>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div><!--FIN CARDS-->
+                                    </div>
+                                    </div>
+                                </div>
+                                <!-- SARGENTO -->
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+                                    <button class="miembros__rank collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                                        <img src="img/rankss/sergeant.jpg" class="img-fluid" alt="rank militar" />
+                                        Sargento 
+                                    </button>
+                                    </h2>
+                                    <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
+                                    <div class="accordion-body">
+                                        <div class="card-body">
+                                            <!--INICIO CARD-->
+                                            <div class="row justify-content-around"><!--INICIO DE CARDS-->
+                                                <div class="col-md-6 col-lg-4 col-xxl-3 pb-3">
+                                                    <div class="card ">
+                                                        <img class="card-img-top img-fluid" src="img/plantillaUno.jpg" alt="presentacion">
+                                                        <div class="card-body textos-event-card">
+                                                            <h3 class="card-title text-center text-uppercase"><a href="unidad.html">Redburn</a></h3>
+                                                            <p class="card-text text-center">Soldado</p>
+                                                            <img src="img/estrellaclass.png" class="img-fluid" height="20" width="800" alt="separador Marcado" />
+                                                            <div class="row pt-4 justify-content-start">
+                                                                <div class="col social-data text-center">
+                                                                    <h3 class="btn btn-outline-primary">Ver perfil</h3>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6 col-lg-4 col-xxl-3 pb-3">
+                                                    <div class="card">
+                                                        <img class="card-img-top img-fluid" src="img/04-3.jpg" alt="presentacion">
+                                                        <div class="card-body textos-event-card">
+                                                            <h3 class="card-title text-center text-uppercase"><a href="">GABY</a></h3>
+                                                            <p class="card-text text-center">SOLDADO</p>
+                                                            <img src="img/estrellaclass.png" class="img-fluid" height="20" width="800" alt="">
+                                                            <div class="row pt-4 justify-content-start">
+                                                                <div class="col social-data text-center">
+                                                                    <h3 class="btn btn-outline-primary">Ver perfil</h3>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6 col-lg-4 col-xxl-3 pb-3">
+                                                    <div class="card">
+                                                        <img class="card-img-top img-fluid" src="img/03-3.jpg" alt="presentacion">
+                                                        <div class="card-body textos-event-card">
+                                                            <h3 class="card-title text-center text-uppercase"><a href="">VIOLET</a></h3>
+                                                            <p class="card-text text-center">SOLDADO</p>
+                                                            <img src="img/estrellaclass.png" class="img-fluid" height="20" width="800" alt="">
+                                                            <div class="row pt-4 justify-content-start">
+                                                                <div class="col social-data text-center">
+                                                                    <h3 class="btn btn-outline-primary">Ver perfil</h3>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div><!--FIN CARDS-->
+                                    </div>
+                                    </div>
+                                </div>
+                                <!-- CABO -->
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="panelsStayOpen-headingfourth">
+                                        <button class="miembros__rank collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapsefourth" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                                            <img src="img/rankss/corporal.jpg" class="img-fluid" alt="rank militar" />
+                                            Cabo
+                                        </button>
+                                    </h2>
+                                    <div id="panelsStayOpen-collapsefourth" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingfourth">
+                                        <div class="accordion-body">
+                                            <div class="card-body">
+                                                <!--INICIO CARD-->
+                                                <div class="row justify-content-around"><!--INICIO DE CARDS-->
+                                                    <div class="col-md-6 col-lg-4 col-xxl-3 pb-3">
+                                                        <div class="card ">
+                                                            <img class="card-img-top img-fluid" src="img/plantillaUno.jpg" alt="presentacion">
+                                                            <div class="card-body textos-event-card">
+                                                                <h3 class="card-title text-center text-uppercase"><a href="unidad.html">Redburn</a></h3>
+                                                                <p class="card-text text-center">Soldado</p>
+                                                                <img src="img/estrellaclass.png" class="img-fluid" height="20" width="800" alt="separador Marcado" />
+                                                                <div class="row pt-4 justify-content-start">
+                                                                    <div class="col social-data text-center">
+                                                                        <h3 class="btn btn-outline-primary">Ver perfil</h3>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6 col-lg-4 col-xxl-3 pb-3">
+                                                        <div class="card">
+                                                            <img class="card-img-top img-fluid" src="img/04-3.jpg" alt="presentacion">
+                                                            <div class="card-body textos-event-card">
+                                                                <h3 class="card-title text-center text-uppercase"><a href="">GABY</a></h3>
+                                                                <p class="card-text text-center">SOLDADO</p>
+                                                                <img src="img/estrellaclass.png" class="img-fluid" height="20" width="800" alt="">
+                                                                <div class="row pt-4 justify-content-start">
+                                                                    <div class="col social-data text-center">
+                                                                        <h3 class="btn btn-outline-primary">Ver perfil</h3>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6 col-lg-4 col-xxl-3 pb-3">
+                                                        <div class="card">
+                                                            <img class="card-img-top img-fluid" src="img/03-3.jpg" alt="presentacion">
+                                                            <div class="card-body textos-event-card">
+                                                                <h3 class="card-title text-center text-uppercase"><a href="">VIOLET</a></h3>
+                                                                <p class="card-text text-center">SOLDADO</p>
+                                                                <img src="img/estrellaclass.png" class="img-fluid" height="20" width="800" alt="">
+                                                                <div class="row pt-4 justify-content-start">
+                                                                    <div class="col social-data text-center">
+                                                                        <h3 class="btn btn-outline-primary">Ver perfil</h3>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div><!--FIN CARDS-->
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- SOLDADO -->
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="panelsStayOpen-headingfifth">
+                                        <button class="miembros__rank collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapsefifth" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                                            <img src="img/rankss/private.jpg" class="img-fluid" alt="rank militar" />
+                                            Soldado
+                                        </button>
+                                    </h2>
+                                    <div id="panelsStayOpen-collapsefifth" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingfifth">
+                                        <div class="accordion-body">
+                                        <div class="card-body">
+                                            <!--INICIO CARD-->
+                                            <div class="row justify-content-around"><!--INICIO DE CARDS-->
+                                                <div class="col-md-6 col-lg-4 col-xxl-3 pb-3">
+                                                    <div class="card ">
+                                                        <img class="card-img-top img-fluid" src="img/plantillaUno.jpg" alt="presentacion">
+                                                        <div class="card-body textos-event-card">
+                                                            <h3 class="card-title text-center text-uppercase"><a href="unidad.html">Redburn</a></h3>
+                                                            <p class="card-text text-center">Soldado</p>
+                                                            <img src="img/estrellaclass.png" class="img-fluid" height="20" width="800" alt="separador Marcado" />
+                                                            <div class="row pt-4 justify-content-start">
+                                                                <div class="col social-data text-center">
+                                                                    <h3 class="btn btn-outline-primary">Ver perfil</h3>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6 col-lg-4 col-xxl-3 pb-3">
+                                                    <div class="card">
+                                                        <img class="card-img-top img-fluid" src="img/04-3.jpg" alt="presentacion">
+                                                        <div class="card-body textos-event-card">
+                                                            <h3 class="card-title text-center text-uppercase"><a href="">GABY</a></h3>
+                                                            <p class="card-text text-center">SOLDADO</p>
+                                                            <img src="img/estrellaclass.png" class="img-fluid" height="20" width="800" alt="">
+                                                            <div class="row pt-4 justify-content-start">
+                                                                <div class="col social-data text-center">
+                                                                    <h3 class="btn btn-outline-primary">Ver perfil</h3>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6 col-lg-4 col-xxl-3 pb-3">
+                                                    <div class="card">
+                                                        <img class="card-img-top img-fluid" src="img/03-3.jpg" alt="presentacion">
+                                                        <div class="card-body textos-event-card">
+                                                            <h3 class="card-title text-center text-uppercase"><a href="">VIOLET</a></h3>
+                                                            <p class="card-text text-center">SOLDADO</p>
+                                                            <img src="img/estrellaclass.png" class="img-fluid" height="20" width="800" alt="">
+                                                            <div class="row pt-4 justify-content-start">
+                                                                <div class="col social-data text-center">
+                                                                    <h3 class="btn btn-outline-primary">Ver perfil</h3>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div><!--FIN CARDS-->
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- RECLUTA -->
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="panelsStayOpen-headingsifth">
+                                        <button class="miembros__rank collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapsesifth" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                                            <!-- <img src="img/rankss/captain.jpg" class="img-fluid" alt="rank militar" /> -->
+                                            Recluta
+                                        </button>
+                                    </h2>
+                                    <div id="panelsStayOpen-collapsesifth" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingsifth">
+                                        <div class="accordion-body">
+                                        <div class="card-body">
+                                            <!--INICIO CARD-->
+                                            <div class="row justify-content-around"><!--INICIO DE CARDS-->
+                                                <div class="col-md-6 col-lg-4 col-xxl-3 pb-3">
+                                                    <div class="card ">
+                                                        <img class="card-img-top img-fluid" src="img/plantillaUno.jpg" alt="presentacion">
+                                                        <div class="card-body textos-event-card">
+                                                            <h3 class="card-title text-center text-uppercase"><a href="unidad.html">Redburn</a></h3>
+                                                            <p class="card-text text-center">Soldado</p>
+                                                            <img src="img/estrellaclass.png" class="img-fluid" height="20" width="800" alt="separador Marcado" />
+                                                            <div class="row pt-4 justify-content-start">
+                                                                <div class="col social-data text-center">
+                                                                    <h3 class="btn btn-outline-primary">Ver perfil</h3>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6 col-lg-4 col-xxl-3 pb-3">
+                                                    <div class="card">
+                                                        <img class="card-img-top img-fluid" src="img/04-3.jpg" alt="presentacion">
+                                                        <div class="card-body textos-event-card">
+                                                            <h3 class="card-title text-center text-uppercase"><a href="">GABY</a></h3>
+                                                            <p class="card-text text-center">SOLDADO</p>
+                                                            <img src="img/estrellaclass.png" class="img-fluid" height="20" width="800" alt="">
+                                                            <div class="row pt-4 justify-content-start">
+                                                                <div class="col social-data text-center">
+                                                                    <h3 class="btn btn-outline-primary">Ver perfil</h3>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-12 col-lg-4 col-xxl-3 pb-3">
+                                                    <div class="card">
+                                                        <img class="card-img-top img-fluid" src="img/03-3.jpg" alt="presentacion">
+                                                        <div class="card-body textos-event-card">
+                                                            <h3 class="card-title text-center text-uppercase"><a href="">VIOLET</a></h3>
+                                                            <p class="card-text text-center">SOLDADO</p>
+                                                            <img src="img/estrellaclass.png" class="img-fluid" height="20" width="800" alt="">
+                                                            <div class="row pt-4 justify-content-start">
+                                                                <div class="col social-data text-center">
+                                                                    <a href="#" class="social-media">f</a>
+                                                                    <a href="#" class="social-media">t</a>
+                                                                    <a href="#" class="social-media">y</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div><!--FIN CARDS-->
+                                        </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="w-100 pb-5"></div>       
+            </div>
+        </section>
+
+        <!--SEXTA SECCION FOOTER-->
+        <section>
+            <div class="row">
+                <div class="col-12 footer-color-bg footer-size">
+                    <div class="container">
+                        <div class="row justify-content-between">
+                            <div class="col-12 col-md-3 col-xl-3 pt-3 pb-3 mb-4 mb-sm-0 footer-content">
+                                <h3>Contactanos</h3>
+                                <p>Puedes acceder a nuesto Foro para tener mas detalles...</p>
+                                <a class="btn btn-outline-warning" href="https://foro.clanarga.com.ar">Detalles...</a>
+                            </div>
+                            <div class="col-12 col-md-3 col-xl-3 pt-3 pb-3 mb-4 mb-sm-0 footer-content">
+                                <img src="img/logo.png" height="45" width="95" alt="logo">
+                                <p class="pt-3">Clan Dedicado a la simulación militar en primera persona contra la IA, no se realizan actividades relacionadas con PVP o TVT.</p>
+                                <p>---------------------------------------------------------</p>
+                                <div class="footer-font-symbols">
+                                    <a class="footer-font-symbol" href="#">f</a>
+                                    <a class="footer-font-symbol" href="#">t</a>
+                                    <a class="footer-font-symbol" href="#">y</a>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-3 col-xl-3 pt-3 pb-3 mb-4 mb-sm-0 footer-content">
+                                <h3>Noticias Recientes</h3>
+                                <h4>A2 Exitosa para Misión Coop</h4>
+                                <span>01 septiembre, 2019</span>
+                                <p>---------------------------------------------------------</p>
+                                <h4>A2 Exitosa para Misión Coop</h4>
+                                <span>01 septiembre, 2019</span>
+                                <p>---------------------------------------------------------</p>
+                                <h4>A2 Exitosa para Misión Coop</h4>
+                                <span>01 septiembre, 2019</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--SEPTIMA SECCION CREDITS-->
+        <footer class="row">
+            <div class="col align-items-center text-center pt-3  footer-content copyright-bg">
+                <p>&copy; Copyright Clan ArgA 2022 | Design by Mirlino Marine</p>
+            </div>
+        </footer>
+        
+        <!--BOOTSTRAP JS-->
+        <!-- <script src="js/jquery.min.js"></script> -->
+        <script src="node_modules/@popperjs/core/dist/umd/popper.js"></script>
+        <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+        <script src="js/main.js"></script>
+        <script src="node_modules/aos/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
+    </body>
+</html>
