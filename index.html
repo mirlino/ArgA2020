@@ -1,428 +1,446 @@
 <!DOCTYPE html>
 <html lang="es">
     <head>
-        <meta charset="UTF-8">
-        <meta content="Mirlino Mariñez" name="AUTHOR">
-        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <title>web ArgA 2.0</title>
-        <!--BOOTSTRAP 4-->
-        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <meta charset="UTF-8" />
+        <meta name="author" content="Mirlino Marine" />
+        <meta name="description" content="Web comunidad de simulación militar" />
+        <meta name="keywords" content="ARMA, Arma 3, Simulador Militar, Arga clan, clan, Videojuego Militar, Comunidad" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- <meta http-equiv="X-UA-Compatible" content="ie=edge" /> -->
+        <title>Clan ArgA | Web Sample</title>
+        <!--BOOTSTRAP 5.2-->
+        <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css" />
+        <!--BOOTSTRAP-ICONS v1.9.0-->
+        <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.css" />
         <!--ANIMATE CSS-->
-        <link rel="stylesheet" href="css/animate.css">
-        <!--FONTAWESOME 5.11-->
-        <link href="css/fontawesome-free-5.11.2-web/css/all.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/animate.css" />
         <!--AOS CSS-->
-        <link rel="stylesheet" href="css/aos.css">
+        <link rel="stylesheet" href="node_modules/aos/dist/aos.css" />
         <!--CUSTOM CSS-->
-        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/main.css" />
     </head>
-    <body>
-        <div class="container-fluid efectoglow">   
-            <!--NAVEGADOR CABECERA-->
-            <header id="my-menuEffect" class="row my-menu pb-3">
-                <div class="col-12 col-xl-5 text-center text-xl-left pt-3 pb-4 pb-lg-1 pl-xl-5 animated fadeInLeft delay-2s">
-                    <a href="index.html">
-                        <img class="img-fluid" src="img/logo.png" width="98" height="98">
-                    </a>
-                </div>
-                <div class="col-12 col-xl-7 my-col">
-                    <nav class="navbar-expand-md navbar-light bg-faded pt-ms-2 pb-ms-2 pb-3 pt-3 pb-md-0 pt-md-0">
-                        <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target="#collapsingNavbar4">
+    <body >
+        <!--NAVEGADOR CABECERA-->
+        <header>
+            <div class="row container-fluid">
+                <nav class="col-12 navbar heading">
+                    <div class="container">
+                        <a class="navbar-brand" href="#">
+                            <img class="logo-primary" src="img/logo.png" alt="logo_ArgA">
+                        </a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDark" aria-controls="offcanvasDarkLabel">
                             <span class="navbar-toggler-icon"></span>
                         </button>
-                        <a href="#" class="navbar-brand d-none">ArgA Clan</a>
-                        <div class="container-fluid">
-                            <div class="collapse navbar-collapse w-100 menu-encabezado" id="collapsingNavbar4">
-                                <ul class="nav nav-justified flex-column w-100 pt-3 flex-md-row">
-                                    <li class="nav-item"><a href="#" class="nav-link active">Inicio</a></li>
-                                    <li class="nav-item submenu">
-                                        <a href="#" class="nav-link">Nosotros</a>
-                                            <ul class="children">
-                                                <li class="nav-item"><a href="nosotros.html" class="nav-link">Historia ArgA</a></li>
-                                                <li class="nav-item"><a href="miembros.html" class="nav-link">Miembros ArgA</a></li>
-                                                <li class="nav-item"><a href="404.html" class="nav-link">404</a></li>
-                                                <li class="nav-item"><a href="#" class="nav-link disabled">Comunidad Amiga</a></li>
-                                            </ul>
+                        <div class="offcanvas show text-bg-dark offcanvas-end" tabindex="-1" id="offcanvasDark" aria-labelledby="offcanvasNavbarLabel">
+                            <div class="offcanvas-header">
+                            <h5 class="offcanvas-title" id="offcanvasNavbarLabel"><img class="logo-primary__menu" src="img/logo.png" alt="logo_ArgA"></h5>
+                            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                            </div>
+                            <div class="offcanvas-body">
+                            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                                <li class="nav-item">
+                                    <a class="text-nav-item nav-link active" aria-current="page" href="#">Inicio</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                <a class="text-nav-item nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Nosotros
+                                </a>
+                                <ul class="dropdown-menu text-bg-dark">
+                                    <li><a class="text-nav-item dropdown-item" href="./nosotros.html">Historia</a></li>
+                                    <li><a class="text-nav-item dropdown-item" href="./miembros.html">Miembros</a></li>
+                                    <li><a class="text-nav-item dropdown-item" href="./events.html">Eventos</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
                                     </li>
-                                    <li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li>
-                                    <li class="nav-item"><a href="events.html" class="nav-link">Eventos</a></li>
-                                    <li class="nav-item"><a href="#" class="nav-link disabled">Galería</a></li>
-                                    <li class="nav-item"><a href="https://foro.clanarga.com.ar" class="nav-link">Foro</a></li>
+                                    <!-- <li><a class="text-nav-item dropdown-item disabled" href="#">Algo mas</a></li> -->
                                 </ul>
-                            </div><!--.collapse-->
-                        </div><!--.container-fluid-->
-                    </nav>
-                </div>
-            </header>
-        </div>
-        <!--SLIDE-->
-        <div class="d-none d-lg-block justify-content-center ">
-            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-                <ol class="carousel-indicators">
-                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-                    <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
-                </ol>
-                <div class="d-flex carousel-inner">
-                    
-                    <div class="carousel-item  active">
-                        <iframe width="1920" height="1080" src="https://www.youtube.com/embed/40g7777dpuY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    </div>
-                            
-                    <div class="carousel-item ">
-                    <a href="#">
-                        <img src="img/fondo.jpeg" class="img-fluid" width="1920" alt="...">
-                    </a>
-                        <div class="carousel-caption d-none d-md-block">
-                            <!--
-                            <h5 class="text-left text-uppercase pt-5">Misión Primavera</h5>
-                            <p class="text-left">Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-                            -->
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                    <img src="img/fondoDos.png" class="img-fluid" width="1920" alt="...">
-                        <div class="carousel-caption d-none d-md-block">
-                            <!--
-                            <h5 class="text-left text-uppercase">Misión Orión</h5>
-                            <p class="text-left">Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-                            -->
-                        </div>
-                        
-                    </div>
-                    <div class="carousel-item">
-                    <img src="img/fondoTres.png" class="img-fluid" width="1920" alt="...">
-                        <div class="carousel-caption d-none d-md-block">
-                            <!--
-                            <h5 class="text-left text-uppercase">Misión Osiris</h5>
-                            <p class="text-left">Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-                            -->
-                        </div>
-                    </div>
-                    
-                </div>
-                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Previous</span>
-                </a>
-                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Next</span>
-                </a>
-            </div>
-        </div>
-        <div class="bg-contenido d-md-block d-lg-none">
-            <img src="img/fondo.jpeg" class="img-fluid" alt="...">
-        </div>
-           
-        <!--CUERPO-->
-        <div class="container-fluid">
-            <!--SEGUNDA SECCION NOSOTROS-->
-            <section class="row">
-                <div class="col-12 colorFondo-Dos columna"> <!--COLUMNA DOS-->
-                    <div class="row">
-                        <div class="container">
-                            <div class="col-12"> <!--INTERMEDIA DE LA COLUMNA DOS-->
-                                <div class="row justify-content-center cotejo">
-                                    <div class="col-sm-12 col-md-5 col-lg-5 col-xl-3 text-center nosotros-font-text columna caja1"><!--Bloque Uno-->
-                                        <img src="img/icon1.png" height="80" width="100" alt="">
-                                        <h3 class="text-uppercase">Inicio Numero Uno</h3> 
-                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus reiciendis nulla suscipit tempora blanditiis minus quisquam, nisi beatae illo necessitatibus?.</p>
-                                        <a class="text-uppercase" href="#">Leer más...</a>
-                                    </div>
-                                    <div class="col-sm-12 col-md-5 col-lg-5 col-xl-3 text-center nosotros-font-text columna caja1"><!--Bloque Dos-->
-                                        <img src="img/icon1.png" height="80" width="100" alt="">
-                                        <h3 class="text-uppercase">Inicio Numero dos</h3>
-                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus reiciendis nulla suscipit tempora blanditiis minus quisquam, nisi beatae illo necessitatibus?.</p>
-                                        <a class="text-uppercase" href="#">Leer más...</a>
-                                    </div>
-                                    <div class="col-sm-12 col-md-8 col-lg-8 col-xl-3 text-center nosotros-font-text columna caja1"><!--Bloque Tres-->
-                                        <img src="img/icon1.png" height="80" width="100" alt="">
-                                        <h3 class="text-uppercase">Inicio Numero tres</h3>
-                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus reiciendis nulla suscipit tempora blanditiis minus quisquam, nisi beatae illo necessitatibus?.</p>
-                                        <a class="text-uppercase" href="#">Leer más...</a>
-                                    </div>   
-                                </div>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="text-nav-item nav-link" href="./blog.html">Blog</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="text-nav-item nav-link" href="./404.html">404</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="text-nav-item nav-link" href="#">Foro</a>
+                                </li>
+                            </ul>
                             </div>
                         </div>
-                        <div class="w-100"></div>
-                        <div class=" col-12 col-lg-2 text-center text-lg-left align-self-lg-center offset-lg-3 pb-2 pb-lg-0 nosotros efectoglow">
-                            <img data-aos="zoom-in" data-aos-delay="300" data-aos-anchor-placement="top-center" src="img/LOGOaRGA.png" alt="Logo">
+                    </div>
+                </nav>
+            </div>
+        </header>
+
+        <!--SLIDE bootstrap_5-->
+        <div class="row">
+            <div class="col-12 d-none d-md-block">
+                <div id="carouselExampleFade" class="slider-caption__bg carousel slide carousel-fade " data-bs-ride="carousel" data-bs-interval="true">
+                    <div class="carousel-inner">
+                    <!-- <div class="carousel-item">
+                        <iframe width="1920" height="930" src="https://www.youtube.com/embed/WyzDPwuTMbc?controls=0&amp;start=37" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="d-block w-100" alt="..."></iframe>
+                    </div> -->
+                    <div class="carousel-item active" data-bs-interval="100000">
+                        <img src="img/fondo.jpeg" class="caption__img d-block w-100" alt="...">
+                        <div class="carousel-caption slider-caption__text d-none d-md-block">
+                            <h5>first slide label</h5>
+                            <p>Some representative placeholder content for the second slide.</p>
                         </div>
-                        <div data-aos="fade-right" data-aos-delay="400" data-aos-anchor-placement="top-center" class="col-12 text-center text-lg-left col-lg-6 nosotros"> <!--CONTINUACION SECCION DOS-->
-                            <h2 class="text-uppercase">Clan Arga</h2>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="10000">
+                        <img src="img/fondoDos.png" class="caption__img d-block w-100" alt="...">
+                        <div class="carousel-caption slider-caption__text d-none d-md-block">
+                            <h5>Second slide label</h5>
+                            <p>Some representative placeholder content for the second slide.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="10000">
+                        <img src="img/fondoTres.png" class="caption__img d-block w-100" alt="...">
+                        <div class="carousel-caption slider-caption__text d-none d-md-block">
+                            <h5>Third slide label</h5>
+                            <p>Some representative placeholder content for the second slide.</p>
+                        </div>
+                    </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <!--PRIMERA SECCION NOSOTROS-->
+        <section>
+            <div class="row">
+                <!--INTERMEDIA DE LA COLUMNA DOS-->
+                <div class="col-12 container"> 
+                    <div class="row justify-content-center">
+                        <div class="col-sm-12 col-md-5 col-lg-5 col-xl-3 text-center about-card-box"><!--Bloque Uno-->
+                            <img src="img/reclutamiento.png" class="about-img" alt="Portada imagen" />
+                            <h3>Nuestros entrenamientos</h3> 
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus reiciendis nulla suscipit tempora blanditiis minus quisquam, nisi beatae illo necessitatibus?.</p>
+                            <a href="#">Leer más...</a>
+                        </div>
+                        <div class="col-sm-12 col-md-5 col-lg-5 col-xl-3 text-center about-card-box"><!--Bloque Dos-->
+                            <img src="img/historyOne.png" class="about-img" alt="Portada imagen">
+                            <h3>Misiones Oficiales</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus reiciendis nulla suscipit tempora blanditiis minus quisquam, nisi beatae illo necessitatibus?.</p>
+                            <a href="#">Leer más...</a>
+                        </div>
+                        <div class="col-sm-12 col-md-8 col-lg-8 col-xl-3 text-center about-card-box"><!--Bloque Tres-->
+                            <img src="img/fondoTres.png" class="about-img" alt="Portada imagen">
+                            <h3>Evententos Semanales</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus reiciendis nulla suscipit tempora blanditiis minus quisquam, nisi beatae illo necessitatibus?.</p>
+                            <a href="#">Leer más...</a>
+                        </div>   
+                    </div>
+                </div>
+            </div>
+            <div class="row ">
+                <div class="col-12 container pb-5">
+                    <div class="row">
+                        <div class="col-12 d-flex align-self-lg-center justify-content-center justify-content-xl-end col-xl-6 pb-2 about-text">
+                            <img class="about-img-content" src="img/badge-logo.png" alt="Logo">
+                        </div>
+                        <div class="col-12 container text-xl-left col-xl-6 about-text about-text__description"> <!--CONTINUACION SECCION DOS-->
+                            <h2>Clan Arga</h2>
                             <h3>Unete a Nuestra Gran Comunidad</h3>
-                            <br>
+
                             <p>Clan ArgA situa su origen a finales de Octubre del año 2011.</p>
                             <p>
                                 Sus tres miembros fundadores: ZePp, Reo y Kosteleta comenzaron a interactuar y efectuar publicaciones en foros y sitios de encuentro de jugadores con la intencion de crear una comunidad que jugara de una forma mas ordenada y seria.
                             </p>
                         </div>
-                        <div class="w-100 mb-3">
-                        </div>
-                        <div class="col offset-0 offset-lg-5 text-center text-lg-left pb-5 nosotros-prim espacio-Secciones">
-                            <p data-aos="zoom-in-down" data-aos-delay="100">
-                                <a href="nosotros.html" class="btn btn-outline-primary texto-btn">Seguir Leyendo...</a> <span class="separador text-uppercase">ó</span>
-                                <a href="#" class="separador"><img src="img/Icon-facebook.png" alt="facebook"></a>
-                                <a href="#" class="separador"><img src="img/Icon-twitter.png" alt="twitter"></a>
-                                <a href="#" class="separador"><img src="img/Icon-youtube.png" alt="youtube"></a>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <!--TERCERA SECCION EVENTOS-->
-            <section>
-                <div class="row zoneout">
-                    <div class="col-12 colorFondo-Tres columna"> <!--COLUMNA TRES-->
-                        <div class="container">
-                            <div class="row justify-content-around ">
-                                <div data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-delay="200" class="col-12 t-events mt-5 pt-5 pb-5 mb-5 text-center">
-                                    <h2 class="text-uppercase">Eventos Actuales</h2>
-                                    <p>Presentación Eventos Proximos</p>
-                                </div>
-                                <div data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-delay="200" class="col-md-6 col-lg-4 pb-3">
-                                    <div class="card ">
-                                        <img class="card-img-top img-fluid" src="img/guard1.jpg" alt="presentacion">
-                                        <div class="card-body textos-event-card">
-                                            <h5 class="card-text">13 Enero 2019</h5>
-                                            <h3 class="card-title text-uppercase">Esto es un Evento 1</h3>
-                                            <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe perspiciatis dolores, rem voluptates quod ipsam explicabo sunt quis deleniti quia.</p>
-                                            <a class="btn btn-primary texto-btn" href="#">Ver más...</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-delay="200" class="col-md-6 col-lg-4 pb-3">
-                                    <div class="card">
-                                        <img class="card-img-top img-fluid" src="img/guard1.jpg" alt="presentacion">
-                                        <div class="card-body textos-event-card">
-                                            <h5>13 Enero 2019</h5>
-                                            <h3 class="card-title text-uppercase">Esto es un Evento 2</h3>
-                                            <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe perspiciatis dolores, rem voluptates quod ipsam explicabo sunt quis deleniti quia.</p>
-                                            <a class="btn btn-primary texto-btn" href="#">Ver más...</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-delay="200" class="col-md-12 col-lg-4 pb-3">
-                                    <div class="card">
-                                        <img class="card-img-top img-fluid" src="img/guard1.jpg" alt="presentacion">
-                                        <div class="card-body textos-event-card">
-                                            <h5>13 Enero 2019</h5>
-                                            <h3 class="card-title text-uppercase">Esto Es un evento 3</h3>
-                                            <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe perspiciatis dolores, rem voluptates quod ipsam explicabo sunt quis deleniti quia.</p>
-                                            <a class="btn btn-primary texto-btn" href="#">Ver más...</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="w-100"></div> <!--DIVISOR-->
-                                <div data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-delay="200" class="col-md-6 col-lg-4 mb-lg-5 pb-3">
-                                    <div class="card">
-                                        <img class="card-img-top img-fluid" src="img/guard1.jpg" alt="presentacion">
-                                        <div class="card-body textos-event-card">
-                                            <h5>13 Enero 2019</h5>
-                                            <h3 class="card-title text-uppercase">Esto es un evento 4</h3>
-                                            <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe perspiciatis dolores, rem voluptates quod ipsam explicabo sunt quis deleniti quia.</p>
-                                            <a class="btn btn-primary texto-btn" href="#">Ver más...</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-delay="200" class="col-md-6 col-lg-4 mb-lg-5 pb-3">
-                                    <div class="card">
-                                        <img class="card-img-top img-fluid" src="img/guard1.jpg" alt="presentacion">
-                                        <div class="card-body textos-event-card">
-                                            <h5>13 Enero 2019</h5>
-                                            <h3 class="card-title text-uppercase">Esto es un evento 5</h3>
-                                            <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe perspiciatis dolores, rem voluptates quod ipsam explicabo sunt quis deleniti quia.</p>
-                                            <a class="btn btn-primary texto-btn" href="#">Ver más...</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-delay="200" class="col-md-12 col-lg-4 mb-5 mb-sm-5 mb-md-5 mb-lg-5">
-                                    <div class="card">
-                                        <img class="card-img-top img-fluid" src="img/guard1.jpg" alt="presentacion">
-                                        <div class="card-body textos-event-card">
-                                            <h5>13 Enero 2019</h5>
-                                            <h3 class="card-title text-uppercase">Esto es un evento 6</h3>
-                                            <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe perspiciatis dolores, rem voluptates quod ipsam explicabo sunt quis deleniti quia.</p>
-                                            <a class="btn btn-primary texto-btn" href="#">Ver más...</a>
-                                        </div>
-                                    </div>
+                        <div class="w-100 mb-3"></div>
+                        <div class="col align-self-center text-center text-lg-left pb-5">
+                            <div class="about-social">
+                                <a href="nosotros.html" class="btn btn-outline-primary texto-btn">Seguir Leyendo...</a> 
+                                <span class="margin-letter">ó</span>
+                                <div class="social__column">
+                                    <a class="font-symbol" href="#"><span>f</span></a>
+                                    <a class="font-symbol" href="#"><span>t</span></a>
+                                    <a class="font-symbol" href="#"><span>y</span></a>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </section>
-            <!--CUARTA SECCION NOTICIAS-->
-            <section>
-                <div class="row zoneout">
-                    <div class="col-12 colorFondo-Cuatro">
-                        <div class="container">
-                            <div class="row justify-content-around ">
-                                <div data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-delay="200" class="col-12 t-events mt-5 pt-5 pb-5 mb-5 text-center">
-                                    <h2 class="text-uppercase">Ultimas Noticias</h2>
-                                    <p>Presentación de las Noticias Recientes</p>
-                                </div>
-                                <div data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-delay="200" class="col-md-6 col-lg-4 pb-3">
-                                    <div class="card ">
-                                        <img class="card-img-top img-fluid" src="img/guard1.jpg" alt="presentacion">
-                                        <div class="card-body textos-event-card">
-                                            <h5 class="card-text">13 Enero 2019</h5>
-                                            <h3 class="card-title text-uppercase">Esto es un Evento 1</h3>
-                                            <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe perspiciatis dolores, rem voluptates quod ipsam explicabo sunt quis deleniti quia.</p>
-                                            <a class="btn btn-primary texto-btn" href="blog.html">Ver más...</a>
-                                            <div class="row pt-4 justify-content-start">
-                                                <div class="col admin text-left">
-                                                    <h3 class="">Por: <a href="#"><span class="text-uppercase">admin</span></a></h3></a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-delay="200" class="col-md-6 col-lg-4 pb-3">
-                                    <div class="card">
-                                        <img class="card-img-top img-fluid" src="img/guard1.jpg" alt="presentacion">
-                                        <div class="card-body textos-event-card">
-                                            <h5>13 Enero 2019</h5>
-                                            <h3 class="card-title text-uppercase">Esto es un Evento 2</h3>
-                                            <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe perspiciatis dolores, rem voluptates quod ipsam explicabo sunt quis deleniti quia.</p>
-                                            <a class="btn btn-primary texto-btn" href="blog.html">Ver más...</a>
-                                            <div class="row pt-4 justify-content-start">
-                                                <div class="col admin text-left">
-                                                    <h3 class="">Por: <a href="#"><span class="text-uppercase">admin</span></a></h3></a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-delay="200" class="col-md-12 col-lg-4 pb-3">
-                                    <div class="card">
-                                        <img class="card-img-top img-fluid" src="img/guard1.jpg" alt="presentacion">
-                                        <div class="card-body textos-event-card">
-                                            <h5>13 Enero 2019</h5>
-                                            <h3 class="card-title text-uppercase">Esto Es un evento 3</h3>
-                                            <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe perspiciatis dolores, rem voluptates quod ipsam explicabo sunt quis deleniti quia.</p>
-                                            <a class="btn btn-primary texto-btn" href="blog.html">Ver más...</a>
-                                            <div class="row pt-4 justify-content-start">
-                                                <div class="col admin text-left">
-                                                    <h3 class="">Por: <a href="#"><span class="text-uppercase">admin</span></a></h3></a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="w-100"></div> <!--DIVISOR-->
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <!--QUINTA SECCION DESEMPEÑO-->
-            <section class="row zoneout">
-                <div class="col-12 colorFondo-Cinco pb-5">
+            </div>
+        </section>
+        
+        <!--SEGUNDA SECCION EVENTOS-->
+        <section>
+            <div class="row">
+                <div class="col-12 background-arga pb-5">
                     <div class="container">
-                        <div class="row justify-content-around ">
-                            <div data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-delay="100" class="col-12 t-events mt-5 pt-5 pb-5 mb-5 text-center">
-                                <h2 class="text-uppercase">Mejores Tres Desempeños del 2019</h2>
-                                <p>Mejores tres unidades que terminaron el año anterior con mejores calificaciones</p>
+                        <div class="row justify-content-center">
+                            <div class="col-12 pt-5 pb-5 event-content--header">
+                                <h2>Eventos más recientes</h2>
+                                <p>últimos tres eventos agregados</p>
                             </div>
-                            <div data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-delay="200" class="col-md-6 col-lg-4 pb-3">
-                                <div class="card">
-                                    <img class="card-img-top img-fluid" src="img/hombre2-completo.png" alt="presentacion">
-                                    <div class="card-body textos-event-card text-center">
-                                        <h3 class="card-title text-uppercase"><a href="unidad.html">Redburn</a></h3>
-                                        <p class="card-text text-uppercase">Soldado</p>
-                                        <img src="img/medalArgA.png" width="121" height="131" alt="img">
+                            <!-- CARD-EVENTS -->
+                            <div class="col-12 col-xl-6 col-xxl-4 mb-3 mt-3 d-flex justify-content-center">
+                                <div class="event-content-box">
+                                    <div class="event-content-box-description">
+                                        <div class="box--date">
+                                            <h5>13 enero 2023</h5>
+                                        </div>
+                                        <div class="box--description">
+                                            <div class="description--img">
+                                                <img class="event-img" src="./img/badge-logo.png" alt="badge Arga">
+                                            </div>
+                                            <div class="description--text">
+                                                <h3>Neptuno</h3>
+                                                <a class="btn-event" href="#">Saber más...</a>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                            <div data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-delay="200" class="col-md-6 col-lg-4 pb-3">
-                                <div class="card">
-                                    <img class="card-img-top img-fluid" src="img/hombre2-completo.png" alt="presentacion">
-                                    <div class="card-body textos-event-card text-center">
-                                        <h3 class="card-title text-uppercase"><a href="unidad.html">Redburn</a></h3>
-                                        <p class="card-text text-uppercase">Soldado</p>
-                                        <img src="img/medalArgA.png" width="121" height="131" alt="img">
+                            <!-- CARD-EVENTS -->
+                            <div class="col-12 col-xl-6 col-xxl-4 mb-3 mt-3 d-flex justify-content-center">
+                                <div class="event-content-box">
+                                    <div class="event-content-box-description">
+                                        <div class="box--date">
+                                            <h5>24 Enero 2023</h5>
+                                        </div>
+                                        <div class="box--description">
+                                            <div class="description--img">
+                                                <img class="event-img" src="./img/badge-logo.png" alt="badge Arga">
+                                            </div>
+                                            <div class="description--text">
+                                                <h3>Asalto a la Catedral</h3>
+                                                <a class="btn-event" href="#">Saber más...</a>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                            <div data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-delay="200" class="col-md-6 col-lg-4 pb-3 ">
-                                <div class="card">
-                                    <img class="card-img-top img-fluid" src="img/hombre2-completo.png" alt="presentacion">
-                                    <div class="card-body textos-event-card text-center">
-                                        <h3 class="card-title text-uppercase"><a href="unidad.html">Redburn</a></h3>
-                                        <p class="card-text text-uppercase">Soldado</p>
-                                        <img src="img/medalArgA.png" width="121" height="131" alt="img">
+                            <!-- CARD-EVENTS -->
+                            <div class="col-12 col-xl-6 col-xxl-4 mb-3 mt-3 d-flex justify-content-center">
+                                <div class="event-content-box">
+                                    <div class="event-content-box-description">
+                                        <div class="box--date">
+                                            <h5>5 Febrero 2023</h5>
+                                        </div>
+                                        <div class="box--description">
+                                            <div class="description--img">
+                                                <img class="event-img" src="./img/badge-logo.png" alt="badge Arga">
+                                            </div>
+                                            <div class="description--text">
+                                                <h3>Mercedez</h3>
+                                                <a class="btn-event" href="#">Saber más...</a>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="w-100"></div> <!--DIVISOR-->
+                            <div class="d-block w-100"></div>
+                            <div class="col text-center mt-5 mb-5">
+                                <a class="btn btn-event-more" href="#">más Eventos...</a>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </section>
+            </div>
+        </section>
 
-            <!--SEXTA SECCION FOOTER-->
-            <section class="row zoneout">
-                <div class="col-12 colorFondo-Seis">
+        <!--TERCERA SECCION NOTICIAS-->
+        <section>
+            <div class="row">
+                <div class="col-12 container pb-5">
                     <div class="container">
-                        <div class="row justify-content-between pt-5">
-                            <div class="col-md-3 col-xl-3 pt-3 pb-3 footer-font-text footer-font-text-btn">
+                        <div class="row justify-content-center">
+                            <div class="col-12 pt-5 pb-5 event-content--header">
+                                <h2>Noticias más recientes</h2>
+                                <p>últimas tres noticias agregadas</p>
+                            </div>
+                            <!-- CARD-EVENTS -->
+                            <div class="col-12 col-xl-6 col-xxl-4 mb-3 mt-3 d-flex justify-content-center">
+                                <div class="noticia-content-box">
+                                    <div class="event-content-box-description">
+                                        <div class="box--date">
+                                            <h5>12 agosto 2022</h5>
+                                        </div>
+                                        <div class="box--description">
+                                            <div class="description--text">
+                                                <h3>Nuevos aliados</h3>
+                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum optio rerum ipsum ratione, voluptas, a possimus, inventore quidem quis iste fugit nihil alias debitis blanditiis nobis aut. Tempora rem voluptatibus ab ad quas obcaecati quia nihil voluptate dolore, optio harum deleniti repellendus, iste eum, doloremque itaque laudantium. Earum, nobis? Pariatur.</p>
+                                                <a class="btn-event" href="#">Leer más...</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- CARD-EVENTS -->
+                            <div class="col-12 col-xl-6 col-xxl-4 mb-3 mt-3 d-flex justify-content-center">
+                                <div class="noticia-content-box">
+                                    <div class="event-content-box-description">
+                                        <div class="box--date">
+                                            <h5>10 agosto 2022</h5>
+                                        </div>
+                                        <div class="box--description">
+                                            <div class="description--text">
+                                                <h3>Reunion de clanes</h3>
+                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum optio rerum ipsum ratione, voluptas, a possimus.</p>
+                                                <a class="btn-event" href="#">Leer más...</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- CARD-EVENTS -->
+                            <div class="col-12 col-xl-6 col-xxl-4 mb-3 mt-3 d-flex justify-content-center">
+                                <div class="noticia-content-box">
+                                    <div class="event-content-box-description">
+                                        <div class="box--date">
+                                            <h5>8 Julio 2022</h5>
+                                        </div>
+                                        <div class="box--description">
+                                            <div class="description--text">
+                                                <h3>Información de misión Entrante</h3>
+                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum optio rerum ipsum ratione, voluptas, a possimus, inventore quidem quis iste fugit nihil alias debitis blanditiis nobis aut. Tempora rem voluptatibus ab ad quas obcaecati quia nihil voluptate dolore.</p>
+                                                <a class="btn-event" href="#">Leer más...</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-block w-100"></div>
+                            <div class="col text-center mt-5 mb-5">
+                                <a class="btn btn-event-more" href="#">Ir al Blog...</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--CUARTA SECCION CONDECORADOS-->
+        <section>
+            <div class="row">
+                <div class="col-12 background-arga container pb-5">
+                    <div class="container">
+                        <div class="row align-items-center">
+                            <div class="col-12 pt-5 pb-5 event-content--header">
+                                <h2>Condecoraciones más recientes</h2>
+                                <p>últimos tres condecorados en misiones</p>
+                            </div>
+                            <div class="row">
+                                <div class="col-12 mb-3 mb-lg-0 col-lg-4 d-flex justify-content-center  justify-content-lg-end">
+                                    <div class="duty-soldier duty-soldier-box">
+                                        <img class="duty-img" src="./img/path/26_zps1c7d5ccc.png" alt="Curso_COB">
+                                        <h3>BlackBurn</h3>
+                                        <p>Por haber demostrado experiencia de mando hacia con la misión en la que tuvo que manejar su propio equipo de combate.</p>
+                                    </div>
+                                </div>
+                                <div class="col-12 mb-3 mb-lg-0 col-lg-4 d-flex justify-content-center justify-content-lg-center">
+                                    <div class="duty-soldier duty-soldier-box">
+                                        <img class="duty-img" src="./img/path/16_zpsf2ca749b.png" alt="Curso_COB">
+                                        <h3>BlackBurn</h3>
+                                        <p>Por haber demostrado experiencia en combate y haber sobrevivido a la feroz amenaza enemiga.</p>
+                                    </div>
+                                </div>
+                                <div class="col-12 mb-3 mb-lg-0 col-lg-4 d-flex justify-content-center justify-content-lg-start">
+                                    <div class="duty-soldier duty-soldier-box">
+                                        <img class="duty-img" src="./img/path/09_zpsd105ab89.png" alt="Curso_COB">
+                                        <h3>BlackBurn</h3>
+                                        <p>Por haber demostrado experiencia en manejar la situación cuando era necesario, tomando control de cada orden recivida.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- CARD-EVENTS -->
+                            <div class="d-block w-100"></div>
+                            <div class="col text-center mt-5 mb-5">
+                                <a class="btn btn-event-more" href="#">Ver bault condecorados</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- QUINTA DE ALIADOS -->
+        <section class="row section-partnership">
+            <div class="col partners container">
+                <div class="clan-title-box event-content--header">
+                    <h2>Alianzas Comunitarias</h2>
+                    <p>Nuestros Aliados</p>
+                </div>
+                <div class="container partners-logo-box">
+                    <a href="#"><img class="partners-logo" src="./img/friends/BR4.png" alt="Brigada_Movil" /></a>
+                    <a href="#"><img class="partners-logo-rect" src="./img/friends/CE.png" alt="Comunidad_Espaniola" /></a>
+                    <a href="#"><img class="partners-logo" src="./img/friends/CR.png" alt="Grupo_Rhino" /></a>
+                    <a href="#"><img class="partners-logo" src="./img/friends/CTU.png" alt="Comunidad_Tactica" /></a>
+                    <a href="#"><img class="partners-logo" src="./img/friends/A2.png" alt="Arma 2" /></a>
+                    <a href="#"><img class="partners-logo" src="./img/friends/BAS.png" alt="Brigada_de_las_Americas" /></a>
+                    <a href="#"><img class="partners-logo" src="./img/friends/CS.png" alt="Clan_Cerberus" /></a>
+                    <a href="#"><img class="partners-logo" src="./img/friends/CMPC.png" alt="Compania_Militar_Privada_Calaveras" /></a>
+                    <a href="#"><img class="partners-logo" src="./img/friends/DH.png" alt="Division_Hoplita" /></a>
+                    <a href="#"><img class="partners-logo" src="./img/friends/SFS.png" alt="Simulacion_Tactica" /></a>
+                    <a href="#"><img class="partners-logo-rect" src="./img/friends/ZR.png" alt="Zona_Roja" /></a>
+                </div>
+            </div>    
+        </section>
+
+        <!--SEXTA SECCION FOOTER-->
+        <section>
+            <div class="row">
+                <div class="col-12 footer-color-bg footer-size">
+                    <div class="container">
+                        <div class="row justify-content-between">
+                            <div class="col-12 col-md-3 col-xl-3 pt-3 pb-3 mb-4 mb-sm-0 footer-content">
                                 <h3>Contactanos</h3>
-                                <p>Puedes Acceder a nuesto Foro para tener mas detalles</p>
+                                <p>Puedes acceder a nuesto Foro para tener mas detalles...</p>
                                 <a class="btn btn-outline-warning" href="https://foro.clanarga.com.ar">Detalles...</a>
                             </div>
-                            <div class="col-md-3 col-xl-3 pt-3 pb-3 footer-font-text">
+                            <div class="col-12 col-md-3 col-xl-3 pt-3 pb-3 mb-4 mb-sm-0 footer-content">
                                 <img src="img/logo.png" height="45" width="95" alt="logo">
                                 <p class="pt-3">Clan Dedicado a la simulación militar en primera persona contra la IA, no se realizan actividades relacionadas con PVP o TVT.</p>
                                 <p>---------------------------------------------------------</p>
-                                <p>
-                                    <a href="#" class="footer-redes-fb"><img src="img/Icon-facebook.png" alt="facebook"></a>
-                                    <a href="#" class="footer-separador footer-redes-tw"><img src="img/Icon-twitter.png" alt="twitter"></a>
-                                    <a href="#" class="footer-separador footer-redes-yo"><img src="img/Icon-youtube.png" alt="youtube"></a>
-                                </p>
+                                <div class="footer-font-symbols">
+                                    <a class="footer-font-symbol" href="#">f</a>
+                                    <a class="footer-font-symbol" href="#">t</a>
+                                    <a class="footer-font-symbol" href="#">y</a>
+                                </div>
                             </div>
-                            <div class="col-md-3 col-xl-3 pt-3 pb-3 footer-font-text">
+                            <div class="col-12 col-md-3 col-xl-3 pt-3 pb-3 mb-4 mb-sm-0 footer-content">
                                 <h3>Noticias Recientes</h3>
                                 <h4>A2 Exitosa para Misión Coop</h4>
                                 <span>01 septiembre, 2019</span>
                                 <p>---------------------------------------------------------</p>
                                 <h4>A2 Exitosa para Misión Coop</h4>
                                 <span>01 septiembre, 2019</span>
+                                <p>---------------------------------------------------------</p>
+                                <h4>A2 Exitosa para Misión Coop</h4>
+                                <span>01 septiembre, 2019</span>
                             </div>
                         </div>
                     </div>
                 </div>
-            </section>
-            <footer class="row zoneout">
-                <div class="col text-center pt-3  footer-font-text copyright">
-                    <p>&copy; Copiryght Clan ArgA</p>
-                </div>
-            </footer>
-        
-
-            <!--BOTON SUBIR AL TOP-->
-            <div class="row">
-                <div class="col-12">
-                    <div class="tophead">
-                        <a id="ventana" class="d-none text-uppercase subir toTopY" href="#">
-                            Subir
-                        </a>
-                    </div>
-                </div>
             </div>
-        </div>
+        </section>
 
+        <!--SEPTIMA SECCION CREDITS-->
+        <footer class="row">
+            <div class="col align-items-center text-center pt-3  footer-content copyright-bg">
+                <p>&copy; Copyright Clan ArgA 2022 | Design by Mirlino Marine</p>
+            </div>
+        </footer>
+        
         <!--BOOTSTRAP JS-->
-        <script src="js/jquery.min.js"></script>
-        <script src="js/popper.js"></script>
-        <script src="js/bootstrap.min.js"></script>
+        <!-- <script src="js/jquery.min.js"></script> -->
+        <script src="node_modules/@popperjs/core/dist/umd/popper.js"></script>
+        <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
         <script src="js/main.js"></script>
-        <script src="js/aos.js"></script>
-        <script>
+        <script src="node_modules/aos/dist/aos.js"></script>
+        <!-- <script>
             AOS.init();
-        </script>
+        </script> -->
     </body>
 </html>

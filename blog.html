@@ -1,323 +1,331 @@
 <!DOCTYPE html>
 <html lang="es">
     <head>
-        <meta charset="UTF-8">
-        <meta content="Mirlino Mariñez" name="AUTHOR">
-        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <title>web ArgA 2.0</title>
-        <!--BOOTSTRAP 4-->
-        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <meta charset="UTF-8" />
+        <meta name="author" content="Mirlino Marine" />
+        <meta name="description" content="Web comunidad de simulación militar" />
+        <meta name="keywords" content="ARMA, Arma 3, Simulador Militar, Arga clan, clan, Videojuego Militar, Comunidad" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- <meta http-equiv="X-UA-Compatible" content="ie=edge" /> -->
+        <title>Clan ArgA | Web Sample</title>
+        <!--BOOTSTRAP 5.2-->
+        <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css" />
+        <!--BOOTSTRAP-ICONS v1.9.0-->
+        <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.css" />
         <!--ANIMATE CSS-->
-        <link rel="stylesheet" href="css/animate.css">
-        <!--FONTAWESOME 5.11-->
-        <link href="css/fontawesome-free-5.11.2-web/css/all.css" rel="stylesheet">
-        <link rel="stylesheet" href="css/prettyPhoto.css" type="text/css" media="screen" charset="utf-8" />
+        <link rel="stylesheet" href="css/animate.css" />
         <!--AOS CSS-->
-        <link rel="stylesheet" href="css/aos.css" />
+        <link rel="stylesheet" href="node_modules/aos/dist/aos.css" />
         <!--CUSTOM CSS-->
-        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/main.css" />
     </head>
-    <body >
-        <div class="container-fluid">   
-            <!--NAVEGADOR CABECERA-->
-            <header id="my-menuEffect" class="row my-menu pb-3">
-                <div class="col-12 col-xl-5 text-center text-xl-left pt-3 pb-4 pb-lg-1 pl-xl-5 animated bounceInDown delay-2s">
-                    <a href="index.html">
-                        <img class="img-fluid" src="img/logo.png" width="98" height="98">
-                    </a>
-                </div>
-                <div class="col-12 col-xl-7 my-col">
-                    <nav class="navbar-expand-md navbar-light bg-faded pt-ms-2 pb-ms-2 pb-3 pt-3 pb-md-0 pt-md-0">
-                        <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target="#collapsingNavbar4">
+    <body>
+        <!--NAVEGADOR CABECERA-->
+        <header>
+            <div class="row container-fluid">
+                <nav class="col-12 navbar heading">
+                    <div class="container">
+                        <a class="navbar-brand" href="#">
+                            <img class="logo-primary" src="img/logo.png" alt="logo_ArgA">
+                        </a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDark" aria-controls="offcanvasDarkLabel">
                             <span class="navbar-toggler-icon"></span>
                         </button>
-                        <a href="index.html" class="navbar-brand d-none">ArgA Clan</a>
-                        <div class="container-fluid">
-                            <div class="collapse navbar-collapse w-100 menu-encabezado" id="collapsingNavbar4">
-                                <ul class="nav nav-justified flex-column w-100 pt-3 flex-md-row">
-                                    <li class="nav-item"><a href="index.html" class="nav-link">Inicio</a></li>
-                                    <li class="nav-item submenu">
-                                        <a href="#" class="nav-link">Nosotros</span></a>
-                                        <ul class="children">
-                                            <li class="nav-item"><a href="nosotros.html" class="nav-link">Historia ArgA</a></li>
-                                            <li class="nav-item"><a href="miembros.html" class="nav-link">Miembros ArgA</a></li>
-                                            <li class="nav-item"><a href="404.html" class="nav-link">404</a></li>
-                                            <li class="nav-item"><a href="#" class="nav-link disabled">Comunidad Amiga</a></li>
-                                            
-                                        </ul>
+                        <div class="offcanvas show text-bg-dark offcanvas-end" tabindex="-1" id="offcanvasDark" aria-labelledby="offcanvasNavbarLabel">
+                            <div class="offcanvas-header">
+                            <h5 class="offcanvas-title" id="offcanvasNavbarLabel"><img class="logo-primary__menu" src="img/logo.png" alt="logo_ArgA"></h5>
+                            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                            </div>
+                            <div class="offcanvas-body">
+                            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                                <li class="nav-item">
+                                    <a class="text-nav-item nav-link active" aria-current="page" href="./index.html">Inicio</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                <a class="text-nav-item nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Nosotros
+                                </a>
+                                <ul class="dropdown-menu text-bg-dark">
+                                    <li><a class="text-nav-item dropdown-item" href="./nosotros.html">Historia</a></li>
+                                    <li><a class="text-nav-item dropdown-item" href="./miembros.html">Miembros</a></li>
+                                    <li><a class="text-nav-item dropdown-item" href="./events.html">Eventos</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
                                     </li>
-                                    <li class="nav-item"><a href="blog.html" class="nav-link active">Blog</a></li>
-                                    <li class="nav-item"><a href="events.html" class="nav-link">Eventos</a></li>
-                                    <li class="nav-item"><a href="#" class="nav-link disabled">Galería</a></li>
-                                    <li class="nav-item"><a href="https://foro.clanarga.com.ar" class="nav-link">Foro</a></li>
+                                    <!-- <li><a class="text-nav-item dropdown-item disabled" href="#">Algo mas</a></li> -->
                                 </ul>
-                            </div><!--.collapse-->
-                        </div><!--.container-fluid-->
-                    </nav>
-                </div>
-            </header>
-
-            <!--CONTENIDO-->
-            <section class="row">
-                <div class="col-12 contenidoSuperior">
-                    <img class="imagenFondo-blog img-fluid" src="img/fondo.png" alt="fondo"/>
-                    <div id="not-intro" class="row">
-                        <div class="col-4 d-none d-lg-block animated fadeInLeftBig slow delay-2s not-portada align-self-lg-center">
-                            <span>Destacado</span>
-                            <h2 class="text-uppercase letters-title"><a href="noticia.html"><span>Reunión</span> ArgA <span>2020</span></a></h2>
-                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed aliquid quod in molestias, distinctio perspiciatis expedita quaerat veniam odio eaque facere repellat quibusdam praesentium quisquam necessitatibus! Numquam voluptatum blanditiis ducimus iure quia.</p>
-                        </div>
-                        <div class="col-8">
-                            <div class="animated fadeIn d-none d-lg-block delay-1s ">
-                                <a href="noticia.html"><img src="img/fondoTres.png" class="img-fluid pb-4" width="1200" alt=""></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="text-nav-item nav-link" href="./blog.html">Blog</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="text-nav-item nav-link" href="./404.html">404</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="text-nav-item nav-link" href="#">Foro</a>
+                                </li>
+                            </ul>
                             </div>
                         </div>
                     </div>
+                </nav>
+            </div>
+        </header>
+
+        <!--CONTENIDO-->
+        <section class="row">
+            <div class="col-12 contenidoSuperior">
+                <img class="imagenFondo-blog img-fluid" src="img/fondo.png" alt="fondo"/>
+                <div id="not-intro" class="row">
+                    <div class="col-4 d-none d-lg-block animated fadeInLeftBig slow delay-2s not-portada align-self-lg-center">
+                        <span>Destacado</span>
+                        <h2 class="text-uppercase letters-title"><a href="noticia.html"><span>Reunión</span> ArgA <span>2020</span></a></h2>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed aliquid quod in molestias, distinctio perspiciatis expedita quaerat veniam odio eaque facere repellat quibusdam praesentium quisquam necessitatibus! Numquam voluptatum blanditiis ducimus iure quia.</p>
+                    </div>
+                    <div class="col-8">
+                        <div class="animated fadeIn d-none d-lg-block delay-1s ">
+                            <a href="noticia.html"><img src="img/fondoTres.png" class="img-fluid pb-4" width="1200" alt=""></a>
+                        </div>
+                    </div>
                 </div>
-                
-                <div class="col-12 color-portadaUnidad">
+            </div>
+            
+            <div class="col-12 color-portadaUnidad">
+                <div class="row">
+                    <div class="col pb-2 pt-2 offset-1 blog-titulo">
+                        <h3>Las noticias en el mundo en el clan</h3>
+                    </div>
+                </div>
+            </div>   
+            <div class="col-12 color-portadaNosotros">
+                <div class="">
                     <div class="row">
-                        <div class="col pb-2 pt-2 offset-1 blog-titulo">
-                            <h3>Las noticias en el mundo en el clan</h3>
+                        <div class="col-12 col-lg-8 offset-0 offset-lg-1 pt-5 blog-text">
+                            <div data-aos="fade-up">
+                                <h3><a href="noticia.html">REUNION ARGA 2020</a></h3>
+                                <hr>
+                                <p>Enero 1, 2020</p>
+                                <img src="img/fondoTres.png" class="img-fluid pb-4" alt="">
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus itaque labore deleniti ipsam quasi voluptates amet corrupti repudiandae, quam, magni sunt! Rerum laborum expedita facere...
+                                </p>
+                                <button class="btn btn-warning"><a href="noticia.html">Leer Más...</a></button>
+                                <div class="pb-5"></div>
+                            </div>
+                            
+                            <!--SUB_NOTICIAS-->
+                            <div class="row justify-content-between">
+                                <div class="col-12 col-lg-4 sub-noticias">
+                                    <div data-aos="fade-up">
+                                        <h3><a href="noticia.html">INICIO DE AÑO 2020</a></h3>
+                                        <img src="img/fondoDos.png" class="img-fluid pb-4" alt="This is the title" />
+                                        <p class="date-sub">Enero 1, 2020</p>
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus itaque labore deleniti ipsam quasi voluptates amet corrupti repudiandae, quam, magni sunt! Rerum laborum expedita facere...
+                                        </p>
+                                        <hr>
+                                        <button class="btn btn-warning"><a href="noticia.html">Leer Más...</a></button>
+                                        <div class="pb-5"></div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-lg-4 sub-noticias">
+                                    <div data-aos="fade-up">
+                                        <h3><a href="noticia.html">ACTUALIZACION DE PAGINA</a></h3>
+                                        <img src="img/fondo.png" class="img-fluid pb-4" alt="">
+                                        <p class="date-sub">Enero 1, 2020</p>
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus itaque labore deleniti ipsam quasi voluptates amet corrupti repudiandae, quam, magni sunt! Rerum laborum expedita facere...
+                                        </p>
+                                        <hr>
+                                        <button class="btn btn-warning"><a href="noticia.html">Leer Más...</a></button>
+                                        <div class="pb-5"></div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-lg-4 sub-noticias">
+                                    <div data-aos="fade-up">
+                                        <h3><a href="noticia.html">ACTUALIZACION DE PAGINA</a></h3>
+                                        <img src="img/fondo.png" class="img-fluid pb-4" alt="">
+                                        <p class="date-sub">Enero 1, 2020</p>
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus itaque labore deleniti ipsam quasi voluptates amet corrupti repudiandae, quam, magni sunt! Rerum laborum expedita facere...
+                                        </p>
+                                        <hr>
+                                        <button class="btn btn-warning"><a href="noticia.html">Leer Más...</a></button>
+                                        <div class="pb-5"></div>
+                                    </div>
+                                </div>
+                                <div class="w-100"></div>
+
+                                <div class="col-12 col-lg-4 sub-noticias">
+                                    <div data-aos="fade-up">
+                                        <h3><a href="noticia.html">REUNION ARGA 2020</a></h3>
+                                        <img src="img/fondoTres.png" class="img-fluid pb-4" alt="">
+                                        <p class="date-sub">Enero 1, 2020</p>
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus itaque labore deleniti ipsam quasi voluptates amet corrupti repudiandae, quam, magni sunt! Rerum laborum expedita facere...
+                                        </p>
+                                        <hr>
+                                        <button class="btn btn-warning"><a href="noticia.html">Leer Más...</a></button>
+                                        <div class="pb-5"></div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-lg-4 sub-noticias">
+                                    <div data-aos="fade-up">
+                                        <h3><a href="noticia.html">REUNION ARGA 2020</a></h3>
+                                        <img src="img/fondoTres.png" class="img-fluid pb-4" alt="">
+                                        <p class="date-sub">Enero 1, 2020</p>
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus itaque labore deleniti ipsam quasi voluptates amet corrupti repudiandae, quam, magni sunt! Rerum laborum expedita facere...
+                                        </p>
+                                        <hr>
+                                        <button class="btn btn-warning"><a href="noticia.html">Leer Más...</a></button>
+                                        <div class="pb-5"></div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-lg-4 sub-noticias">
+                                    <div data-aos="fade-up">
+                                        <h3><a href="noticia.html">REUNION ARGA 2020</a></h3>
+                                        <img src="img/fondoTres.png" class="img-fluid pb-4" alt="">
+                                        <p class="date-sub">Enero 1, 2020</p>
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus itaque labore deleniti ipsam quasi voluptates amet corrupti repudiandae, quam, magni sunt! Rerum laborum expedita facere...
+                                        </p>
+                                        <hr>
+                                        <button class="btn btn-warning"><a href="noticia.html">Leer Más...</a></button>
+                                        <div class="pb-5"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--PAGINADOR-->
+                            <nav aria-label="Page navigation example pt-4 blog-text">
+                                <ul class="pagination">
+                                    <li class="page-item"><a class="page-link" href="#">Anterior</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">Siguiente</a></li>
+                                </ul>
+                            </nav>
+                            <hr>
+                            <!--FIN PAGINADOR-->
+                        </div>
+                        <!--INICIO SIDEBAR-->
+                        <div class="col-12 col-lg-2 pt-5 blog-text side-etiqueta">
+                            <h4>BUSCAR</h4>
+                            <hr>
+                            <p><input type="text" name="" id=""><a href="#"> <span>L</span></a></p>
+                            
+                            <div class="w-10 pb-4"></div> 
+                            
+                            <h4>CATEGORIAS</h4>
+                            <hr>
+                            <p><span>,</span> <a href="#">Destacado (12)</a></p>
+                            <p><span>,</span> <a href="#">Noticias (5)</a></p>
+                            <p><span>,</span> <a href="#">Fotos (5)</a></p>
+                            <div class="w-10 pb-4"></div> 
+                            
+                            <h4>POST RECIENTES</h4>
+                            <hr>
+                            <p><span>,</span> <a href="#">REUNION ARGA 2020</a></p>
+                            <p><span>,</span> <a href="#">INICIO DE AÑO 2020</a></p>
+                            <p><span>,</span> <a href="#">ACTUALIZACION DE PAGINA</a></p>
+                            <div class="w-10 pb-4"></div> 
+                        </div>
+                        <!--FIN SIDEBAR-->
+                        <div class="col-12 col-lg-8 pt-2 pb-2 blog-text offset-0 offset-lg-1 zoneout">
+                            <!--INICIO NOTICIAS RELACIONADAS-->
+                            <div class="row justify-content-between">
+                                <div data-aos="fade-right" class="col-12 not-rel">
+                                    <h2 class="text-center mb-3">EVENTOS PROXIMOS</h2>
+                                </div>
+                                <div data-aos="fade-left" class="col-12 col-lg-4 not-rel" >
+                                    <span>Evento</span>
+                                    <a href="#"><img src="img/fondoDos.png" class="img-fluid" width="400" alt="Titulo"></a>
+                                    <a href="#"><h4>INICIO DE AÑO 2020</h4></a>
+                                    <P class="date-not">Enero 1, 2020</P>
+                                    <hr>
+                                </div>
+                                <div data-aos="fade-left" class="col-12 col-lg-4 not-rel">
+                                    <span>Evento</span>
+                                    <a href="#"><img src="img/fondo.png" class="img-fluid" width="400" alt="Titulo"></a>
+                                    <a href="#"><h4>ACTUALIZACION DE PAGINA ARGA A 2.0</h4></a>
+                                    <P class="date-not">Enero 1, 2020</P>
+                                    <hr>
+                                </div>
+                                <div data-aos="fade-left" class="col-12 col-lg-4 not-rel">
+                                    <span>Evento</span>
+                                    <a href="#"><img src="img/fondoTres.png" class="img-fluid" width="400" alt="Titulo"></a>
+                                    <a href="#"><h4>REUNION ARGA 2020</h4></a>
+                                    <P class="date-not">Enero 1, 2020</P>
+                                    <hr>
+                                </div>
+                            </div>
+                            <!--FIN NOTICIAS RELACIONADAS-->
                         </div>
                     </div>
-                </div>   
-                <div class="col-12 color-portadaNosotros">
-                    <div class="">
-                        <div class="row">
-                            <div class="col-12 col-lg-8 offset-0 offset-lg-1 pt-5 blog-text">
-                                <div data-aos="fade-up">
-                                    <h3><a href="noticia.html">REUNION ARGA 2020</a></h3>
-                                    <hr>
-                                    <p>Enero 1, 2020</p>
-                                    <img src="img/fondoTres.png" class="img-fluid pb-4" alt="">
-                                    <p>
-                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus itaque labore deleniti ipsam quasi voluptates amet corrupti repudiandae, quam, magni sunt! Rerum laborum expedita facere...
-                                    </p>
-                                    <button class="btn btn-warning"><a href="noticia.html">Leer Más...</a></button>
-                                    <div class="pb-5"></div>
-                                </div>
-                                
-                                <!--SUB_NOTICIAS-->
-                                <div class="row justify-content-between">
-                                    <div class="col-12 col-lg-4 sub-noticias">
-                                        <div data-aos="fade-up">
-                                            <h3><a href="noticia.html">INICIO DE AÑO 2020</a></h3>
-                                            <img src="img/fondoDos.png" class="img-fluid pb-4" alt="This is the title" />
-                                            <p class="date-sub">Enero 1, 2020</p>
-                                            <p>
-                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus itaque labore deleniti ipsam quasi voluptates amet corrupti repudiandae, quam, magni sunt! Rerum laborum expedita facere...
-                                            </p>
-                                            <hr>
-                                            <button class="btn btn-warning"><a href="noticia.html">Leer Más...</a></button>
-                                            <div class="pb-5"></div>
-                                        </div>
-                                    </div>
-                                    <div class="col-12 col-lg-4 sub-noticias">
-                                        <div data-aos="fade-up">
-                                            <h3><a href="noticia.html">ACTUALIZACION DE PAGINA</a></h3>
-                                            <img src="img/fondo.png" class="img-fluid pb-4" alt="">
-                                            <p class="date-sub">Enero 1, 2020</p>
-                                            <p>
-                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus itaque labore deleniti ipsam quasi voluptates amet corrupti repudiandae, quam, magni sunt! Rerum laborum expedita facere...
-                                            </p>
-                                            <hr>
-                                            <button class="btn btn-warning"><a href="noticia.html">Leer Más...</a></button>
-                                            <div class="pb-5"></div>
-                                        </div>
-                                    </div>
-                                    <div class="col-12 col-lg-4 sub-noticias">
-                                        <div data-aos="fade-up">
-                                            <h3><a href="noticia.html">ACTUALIZACION DE PAGINA</a></h3>
-                                            <img src="img/fondo.png" class="img-fluid pb-4" alt="">
-                                            <p class="date-sub">Enero 1, 2020</p>
-                                            <p>
-                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus itaque labore deleniti ipsam quasi voluptates amet corrupti repudiandae, quam, magni sunt! Rerum laborum expedita facere...
-                                            </p>
-                                            <hr>
-                                            <button class="btn btn-warning"><a href="noticia.html">Leer Más...</a></button>
-                                            <div class="pb-5"></div>
-                                        </div>
-                                    </div>
-                                    <div class="w-100"></div>
+                </div> 
+                <div class="w-10 pb-5"></div> 
+            </div>
+        </section>
 
-                                    <div class="col-12 col-lg-4 sub-noticias">
-                                        <div data-aos="fade-up">
-                                            <h3><a href="noticia.html">REUNION ARGA 2020</a></h3>
-                                            <img src="img/fondoTres.png" class="img-fluid pb-4" alt="">
-                                            <p class="date-sub">Enero 1, 2020</p>
-                                            <p>
-                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus itaque labore deleniti ipsam quasi voluptates amet corrupti repudiandae, quam, magni sunt! Rerum laborum expedita facere...
-                                            </p>
-                                            <hr>
-                                            <button class="btn btn-warning"><a href="noticia.html">Leer Más...</a></button>
-                                            <div class="pb-5"></div>
-                                        </div>
-                                    </div>
-                                    <div class="col-12 col-lg-4 sub-noticias">
-                                        <div data-aos="fade-up">
-                                            <h3><a href="noticia.html">REUNION ARGA 2020</a></h3>
-                                            <img src="img/fondoTres.png" class="img-fluid pb-4" alt="">
-                                            <p class="date-sub">Enero 1, 2020</p>
-                                            <p>
-                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus itaque labore deleniti ipsam quasi voluptates amet corrupti repudiandae, quam, magni sunt! Rerum laborum expedita facere...
-                                            </p>
-                                            <hr>
-                                            <button class="btn btn-warning"><a href="noticia.html">Leer Más...</a></button>
-                                            <div class="pb-5"></div>
-                                        </div>
-                                    </div>
-                                    <div class="col-12 col-lg-4 sub-noticias">
-                                        <div data-aos="fade-up">
-                                            <h3><a href="noticia.html">REUNION ARGA 2020</a></h3>
-                                            <img src="img/fondoTres.png" class="img-fluid pb-4" alt="">
-                                            <p class="date-sub">Enero 1, 2020</p>
-                                            <p>
-                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus itaque labore deleniti ipsam quasi voluptates amet corrupti repudiandae, quam, magni sunt! Rerum laborum expedita facere...
-                                            </p>
-                                            <hr>
-                                            <button class="btn btn-warning"><a href="noticia.html">Leer Más...</a></button>
-                                            <div class="pb-5"></div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!--PAGINADOR-->
-                                <nav aria-label="Page navigation example pt-4 blog-text">
-                                    <ul class="pagination">
-                                        <li class="page-item"><a class="page-link" href="#">Anterior</a></li>
-                                        <li class="page-item"><a class="page-link" href="#">1</a></li>
-                                        <li class="page-item"><a class="page-link" href="#">2</a></li>
-                                        <li class="page-item"><a class="page-link" href="#">3</a></li>
-                                        <li class="page-item"><a class="page-link" href="#">Siguiente</a></li>
-                                    </ul>
-                                </nav>
-                                <hr>
-                                <!--FIN PAGINADOR-->
-                            </div>
-                            <!--INICIO SIDEBAR-->
-                            <div class="col-12 col-lg-2 pt-5 blog-text side-etiqueta">
-                                <h4>BUSCAR</h4>
-                                <hr>
-                                <p><input type="text" name="" id=""><a href="#"> <span>L</span></a></p>
-                                
-                                <div class="w-10 pb-4"></div> 
-                                
-                                <h4>CATEGORIAS</h4>
-                                <hr>
-                                <p><span>,</span> <a href="#">Destacado (12)</a></p>
-                                <p><span>,</span> <a href="#">Noticias (5)</a></p>
-                                <p><span>,</span> <a href="#">Fotos (5)</a></p>
-                                <div class="w-10 pb-4"></div> 
-                                
-                                <h4>POST RECIENTES</h4>
-                                <hr>
-                                <p><span>,</span> <a href="#">REUNION ARGA 2020</a></p>
-                                <p><span>,</span> <a href="#">INICIO DE AÑO 2020</a></p>
-                                <p><span>,</span> <a href="#">ACTUALIZACION DE PAGINA</a></p>
-                                <div class="w-10 pb-4"></div> 
-                            </div>
-                            <!--FIN SIDEBAR-->
-                            <div class="col-12 col-lg-8 pt-2 pb-2 blog-text offset-0 offset-lg-1 zoneout">
-                                <!--INICIO NOTICIAS RELACIONADAS-->
-                                <div class="row justify-content-between">
-                                    <div data-aos="fade-right" class="col-12 not-rel">
-                                        <h2 class="text-center mb-3">EVENTOS PROXIMOS</h2>
-                                    </div>
-                                    <div data-aos="fade-left" class="col-12 col-lg-4 not-rel" >
-                                        <span>Evento</span>
-                                        <a href="#"><img src="img/fondoDos.png" class="img-fluid" width="400" alt="Titulo"></a>
-                                        <a href="#"><h4>INICIO DE AÑO 2020</h4></a>
-                                        <P class="date-not">Enero 1, 2020</P>
-                                        <hr>
-                                    </div>
-                                    <div data-aos="fade-left" class="col-12 col-lg-4 not-rel">
-                                        <span>Evento</span>
-                                        <a href="#"><img src="img/fondo.png" class="img-fluid" width="400" alt="Titulo"></a>
-                                        <a href="#"><h4>ACTUALIZACION DE PAGINA ARGA A 2.0</h4></a>
-                                        <P class="date-not">Enero 1, 2020</P>
-                                        <hr>
-                                    </div>
-                                    <div data-aos="fade-left" class="col-12 col-lg-4 not-rel">
-                                        <span>Evento</span>
-                                        <a href="#"><img src="img/fondoTres.png" class="img-fluid" width="400" alt="Titulo"></a>
-                                        <a href="#"><h4>REUNION ARGA 2020</h4></a>
-                                        <P class="date-not">Enero 1, 2020</P>
-                                        <hr>
-                                    </div>
-                                </div>
-                                <!--FIN NOTICIAS RELACIONADAS-->
-                            </div>
-                        </div>
-                    </div> 
-                    <div class="w-10 pb-5"></div> 
-                </div>
-            </section>
-            <!--SEXTA SECCION FOOTER-->
-            <section class="row zoneout">
-                <div class="col-12 colorFondo-Seis">
+        <!--SEXTA SECCION FOOTER-->
+        <section>
+            <div class="row">
+                <div class="col-12 footer-color-bg footer-size">
                     <div class="container">
-                        <div class="row justify-content-between pt-5">
-                            <div class="col-md-3 col-xl-3 pt-3 pb-3 footer-font-text footer-font-text-btn">
+                        <div class="row justify-content-between">
+                            <div class="col-12 col-md-3 col-xl-3 pt-3 pb-3 mb-4 mb-sm-0 footer-content">
                                 <h3>Contactanos</h3>
-                                <p>Puedes Acceder a nuesto Foro para tener mas detalles</p>
-                                <a class="btn btn-outline-warning" href="#">Detalles...</a>
+                                <p>Puedes acceder a nuesto Foro para tener mas detalles...</p>
+                                <a class="btn btn-outline-warning" href="https://foro.clanarga.com.ar">Detalles...</a>
                             </div>
-                            <div class="col-md-3 col-xl-3 pt-3 pb-3 footer-font-text">
+                            <div class="col-12 col-md-3 col-xl-3 pt-3 pb-3 mb-4 mb-sm-0 footer-content">
                                 <img src="img/logo.png" height="45" width="95" alt="logo">
                                 <p class="pt-3">Clan Dedicado a la simulación militar en primera persona contra la IA, no se realizan actividades relacionadas con PVP o TVT.</p>
                                 <p>---------------------------------------------------------</p>
-                                <p>
-                                    <a href="#" class="footer-redes-fb"><img src="img/Icon-facebook.png" alt="facebook"></a>
-                                    <a href="#" class="footer-separador footer-redes-tw"><img src="img/Icon-twitter.png" alt="twitter"></a>
-                                    <a href="#" class="footer-separador footer-redes-yo"><img src="img/Icon-youtube.png" alt="youtube"></a>
-                                </p>
+                                <div class="footer-font-symbols">
+                                    <a class="footer-font-symbol" href="#">f</a>
+                                    <a class="footer-font-symbol" href="#">t</a>
+                                    <a class="footer-font-symbol" href="#">y</a>
+                                </div>
                             </div>
-                            <div class="col-md-3 col-xl-3 pt-3 pb-3 footer-font-text">
+                            <div class="col-12 col-md-3 col-xl-3 pt-3 pb-3 mb-4 mb-sm-0 footer-content">
                                 <h3>Noticias Recientes</h3>
                                 <h4>A2 Exitosa para Misión Coop</h4>
                                 <span>01 septiembre, 2019</span>
                                 <p>---------------------------------------------------------</p>
                                 <h4>A2 Exitosa para Misión Coop</h4>
                                 <span>01 septiembre, 2019</span>
+                                <p>---------------------------------------------------------</p>
+                                <h4>A2 Exitosa para Misión Coop</h4>
+                                <span>01 septiembre, 2019</span>
                             </div>
                         </div>
                     </div>
                 </div>
-            </section>
-            <footer class="row zoneout">
-                <div class="col text-center pt-3  footer-font-text copyright">
-                    <p>&copy; Copiryght Clan ArgA</p>
-                </div>
-            </footer>
-        </div>
-        
-        
-        <!--BOTON SUBIR AL TOP-->
-            <div class="row">
-                <div class="col-12">
-                    <div class="tophead">
-                        <a id="ventana" class="d-none text-uppercase subir toTopY" href="#">
-                            Subir
-                        </a>
-                    </div>
-                </div>
             </div>
-       </div>
-       
+        </section>
 
+        <!--SEPTIMA SECCION CREDITS-->
+        <footer class="row">
+            <div class="col align-items-center text-center pt-3  footer-content copyright-bg">
+                <p>&copy; Copyright Clan ArgA 2022 | Design by Mirlino Marine</p>
+            </div>
+        </footer>
+        
+        
+        
         <!--BOOTSTRAP JS-->
-        <script src="js/jquery.min.js"></script>
-        <script src="js/popper.js"></script>
-        <script src="js/bootstrap.min.js"></script>
-        <script src="js/jquery.prettyPhoto.js" type="text/javascript"></script>
+        <!-- <script src="js/jquery.min.js"></script> -->
+        <script src="node_modules/@popperjs/core/dist/umd/popper.js"></script>
+        <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
         <script src="js/main.js"></script>
+        <script src="node_modules/aos/dist/aos.js"></script>
         <script type="text/javascript">
             $(document).ready(function(){
               $("a[rel^='prettyPhoto']").prettyPhoto();
             });
           </script>
-        <script src="js/aos.js"></script>
         <script>
             AOS.init();
         </script>
