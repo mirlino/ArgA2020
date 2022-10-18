@@ -7,21 +7,21 @@
 
 @font-face {
   font-family: 'Purista';
-  src: url('../font/Purista-Light.otf') format('otf');
+  src: url('../font/Purista Light.otf') format('otf');
   font-style: normal;
   font-weight: 300;
 }
 
 @font-face {
   font-family: 'Purista';
-  src: url('../font/Purista-Medium.otf') format('otf');
+  src: url('../font/Purista Medium.otf') format('otf');
   font-style: normal;
   font-weight: 400;
 }
 
 @font-face {
   font-family: 'Purista';
-  src: url('../font/Purista-Bold.otf') format('otf');
+  src: url('../font/Purista Bold.otf') format('otf');
   font-style: normal;
   font-weight: 700;
 }
